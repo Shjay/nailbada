@@ -1,0 +1,131 @@
+/* -------------------------------------------------------------
+    Sass CSS3 Mixins! The Cross-Browser CSS3 Sass Library
+    By: Matthieu Aussaguel, http://www.mynameismatthieu.com, @matthieu_tweets
+
+    List of CSS3 Sass Mixins File to be @imported and @included as you need
+
+    The purpose of this library is to facilitate the use of CSS3 on different browsers avoiding HARD TO READ and NEVER
+    ENDING css files
+
+    note: All CSS3 Properties are being supported by Safari 5
+    more info: http://www.findmebyip.com/litmus/#css3-properties
+
+------------------------------------------------------------- */
+@import url(http://fonts.googleapis.com/earlyaccess/jejugothic.css);
+@media screen and (max-width: 767px) {
+  #login_popup .login {
+    width: 300px;
+    height: 255px;
+    position: relative;
+    top: 10%; }
+    #login_popup .login .row:first-child {
+      padding: 14px 10px 0 10px; }
+      #login_popup .login .row:first-child h1 {
+        margin: 0;
+        padding-bottom: 10px; }
+      #login_popup .login .row:first-child .close_login {
+        width: 18px;
+        height: 18px;
+        position: absolute;
+        top: 11px;
+        right: 11px; }
+        #login_popup .login .row:first-child .close_login img {
+          width: 18px;
+          height: 18px; }
+    #login_popup .login .row {
+      padding: 0 10px 8px 10px;
+      position: relative; }
+      #login_popup .login .row .login_btn {
+        height: 35px;
+        width: 145px;
+        background-color: #51d4ff;
+        color: #0044ab;
+        font-size: 13px; }
+    #login_popup .login .row:last-child {
+      padding: 0 10px 13px 10px; }
+      #login_popup .login .row:last-child p {
+        padding-top: 5px; }
+    #login_popup .login .user_info p {
+      padding-bottom: 5px;
+      padding-left: 3px; }
+    #login_popup .login .user_info input[type=text],
+    #login_popup .login .user_info input[type=password] {
+      height: 35px; } }
+@media screen and (min-width: 768px) {
+  #login_popup .login {
+    width: 410px;
+    height: 345px;
+    position: relative;
+    top: 200px; }
+    #login_popup .login .row:first-child {
+      padding: 22px 15px 0 15px; }
+      #login_popup .login .row:first-child h1 {
+        margin: 0;
+        padding-bottom: 18px; }
+      #login_popup .login .row:first-child .close_login {
+        width: 25px;
+        height: 25px;
+        position: absolute;
+        top: 13px;
+        right: 13px; }
+        #login_popup .login .row:first-child .close_login img {
+          width: 25px;
+          height: 25px; }
+    #login_popup .login .row {
+      padding: 0 15px 15px 15px;
+      position: relative; }
+      #login_popup .login .row .login_btn {
+        height: 40px;
+        width: 145px;
+        background-color: #51d4ff;
+        color: #0044ab;
+        font-size: 18px; }
+    #login_popup .login .row:last-child {
+      padding: 0 15px 22px 15px; }
+      #login_popup .login .row:last-child p {
+        padding-top: 6px; }
+    #login_popup .login .user_info p {
+      padding-bottom: 10px;
+      padding-left: 3px; }
+    #login_popup .login .user_info input[type=text],
+    #login_popup .login .user_info input[type=password] {
+      height: 40px; } }
+#login_popup {
+  display: none;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.45);
+  z-index: 2000;
+  position: fixed;
+  top: 0;
+  left: 0; }
+  #login_popup .link {
+    cursor: pointer;
+    color: #0044ab;
+    text-decoration: underline; }
+  #login_popup .login {
+    margin: 0 auto;
+    background-color: #fff;
+    border-radius: 5px; }
+  #login_popup .row {
+    text-align: center; }
+    #login_popup .row p {
+      margin: 0; }
+    #login_popup .row .login_btn {
+      border-radius: 5px;
+      display: table;
+      cursor: pointer;
+      border: 0px;
+      margin: 0 auto; }
+    #login_popup .row .close_login {
+      cursor: pointer; }
+  #login_popup .user_info {
+    text-align: left; }
+    #login_popup .user_info input[type=text],
+    #login_popup .user_info input[type=password] {
+      padding: 0;
+      margin: 0;
+      width: 100%;
+      border: 0px;
+      border-radius: 5px;
+      background-color: #f0f0f0; }

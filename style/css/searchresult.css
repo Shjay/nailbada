@@ -1,0 +1,908 @@
+@charset "UTF-8";
+/* -------------------------------------------------------------
+    Sass CSS3 Mixins! The Cross-Browser CSS3 Sass Library
+    By: Matthieu Aussaguel, http://www.mynameismatthieu.com, @matthieu_tweets
+
+    List of CSS3 Sass Mixins File to be @imported and @included as you need
+
+    The purpose of this library is to facilitate the use of CSS3 on different browsers avoiding HARD TO READ and NEVER
+    ENDING css files
+
+    note: All CSS3 Properties are being supported by Safari 5
+    more info: http://www.findmebyip.com/litmus/#css3-properties
+
+------------------------------------------------------------- */
+@import url(http://fonts.googleapis.com/earlyaccess/jejugothic.css);
+.animated {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both; }
+
+@-webkit-keyframes slideOutRight320 {
+  0% {
+    right: 0px; }
+  100% {
+    visibility: hidden;
+    right: -224px; } }
+@keyframes slideOutRight320 {
+  0% {
+    right: 0px; }
+  100% {
+    visibility: hidden;
+    right: -224px; } }
+.slideOutRight320 {
+  -webkit-animation-name: slideOutRight320;
+  animation-name: slideOutRight320; }
+
+@-webkit-keyframes slideInRight320 {
+  0% {
+    visibility: visible;
+    right: -224px; }
+  100% {
+    right: 0px; } }
+@keyframes slideInRight320 {
+  0% {
+    visibility: visible;
+    right: -224px; }
+  100% {
+    right: 0px; } }
+.slideInRight320 {
+  -webkit-animation-name: slideInRight320;
+  animation-name: slideInRight320; }
+
+@-webkit-keyframes slideOutRight768 {
+  0% {
+    right: 0px; }
+  100% {
+    visibility: hidden;
+    right: -234px; } }
+@keyframes slideOutRight768 {
+  0% {
+    right: 0px; }
+  100% {
+    visibility: hidden;
+    right: -234px; } }
+.slideOutRight768 {
+  -webkit-animation-name: slideOutRight768;
+  animation-name: slideOutRight768; }
+
+@-webkit-keyframes slideInRight768 {
+  0% {
+    visibility: visible;
+    right: -234px; }
+  100% {
+    right: 0px; } }
+@keyframes slideInRight768 {
+  0% {
+    visibility: visible;
+    right: -234px; }
+  100% {
+    right: 0px; } }
+.slideInRight768 {
+  -webkit-animation-name: slideInRight768;
+  animation-name: slideInRight768; }
+
+body {
+  margin: 0px;
+  padding: 0px;
+  width: 100%;
+  display: table;
+  font-family: 'Jeju Gothic', serif; }
+
+li {
+  list-style: none; }
+
+div {
+  display: block; }
+
+.btn-group-vertical > .btn-group:after, .btn-group-vertical > .btn-group:before,
+.btn-toolbar:after, .btn-toolbar:before,
+.clearfix:after, .clearfix:before,
+.container-fluid:after, .container-fluid:before,
+.container:after, .container:before,
+.dl-horizontal dd:after, .dl-horizontal dd:before,
+.form-horizontal .form-group:after, .form-horizontal .form-group:before,
+.modal-footer:after, .modal-footer:before,
+.modal-header:after, .modal-header:before,
+.nav:after, .nav:before,
+.navbar-collapse:after, .navbar-collapse:before,
+.navbar-header:after, .navbar-header:before,
+.navbar:after, .navbar:before,
+.pager:after, .pager:before,
+.panel-body:after, .panel-body:before,
+.row:after, .row:before {
+  display: table;
+  content: " "; }
+
+/* emphasised text */
+.emphasis {
+  color: #0044ab; }
+
+/* Navigation Style */
+.top_head {
+  width: 100%;
+  min-width: 320px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000; }
+  .top_head header {
+    background-image: linear-gradient(160deg, #0092c8 0%, #0044ab 100%); }
+    .top_head header .row {
+      min-width: 300px;
+      max-width: 1024px;
+      margin: 0 auto; }
+      .top_head header .row .btn {
+        height: 40px;
+        font-size: 18px;
+        text-align: center;
+        border-radius: 5px; }
+      .top_head header .row .search_box {
+        margin: 0px auto;
+        float: left;
+        display: flex; }
+        .top_head header .row .search_box input,
+        .top_head header .row .search_box button {
+          padding: 0px;
+          margin: 0px;
+          border: 0px;
+          font-size: 18px; }
+        .top_head header .row .search_box input {
+          border-radius: 5px 0 0 5px; }
+        .top_head header .row .search_box button {
+          border: 0px;
+          border-radius: 0 5px 5px 0;
+          background-color: #51d4ff; }
+          .top_head header .row .search_box button img {
+            width: 20px;
+            height: 20px;
+            padding-top: 3px; }
+        .top_head header .row .search_box #search_btn:hover {
+          box-shadow: 0px 0px 3px 1px #15c5ff; }
+      .top_head header .row .near_me {
+        margin: 0px; }
+        .top_head header .row .near_me .near_me_btn {
+          border-radius: 5px;
+          display: table;
+          cursor: pointer; }
+          .top_head header .row .near_me .near_me_btn img {
+            display: table-cell;
+            vertical-align: middle;
+            padding: 0 7px; }
+          .top_head header .row .near_me .near_me_btn .txt_s {
+            margin-top: 2px;
+            font-size: 10px;
+            color: #fff; }
+      .top_head header .row .menu div {
+        float: left; }
+      .top_head header .row .menu .top_menu {
+        color: #fff;
+        cursor: pointer; }
+        .top_head header .row .menu .top_menu span {
+          display: table-cell;
+          vertical-align: middle;
+          color: #fff; }
+      .top_head header .row .home_dropped_menu {
+        height: 20px;
+        padding: 0px;
+        float: right;
+        cursor: pointer; }
+      .top_head header .row .home_dropped_menu ul {
+        width: 24px;
+        height: 20px;
+        padding: 0px;
+        margin: 0px auto;
+        display: table-cell;
+        vertical-align: middle; }
+        .top_head header .row .home_dropped_menu ul li {
+          height: 4px;
+          border: 0px;
+          border-radius: 2px;
+          background-color: #51d4ff;
+          margin-bottom: 4px; }
+        .top_head header .row .home_dropped_menu ul li:last-child {
+          margin-bottom: 0px; }
+  .top_head .sub_header {
+    background-color: #fff; }
+    .top_head .sub_header .row {
+      padding: 0 20px;
+      max-width: 1024px; }
+      .top_head .sub_header .row .searched_txt {
+        float: left;
+        padding-top: 15px; }
+      .top_head .sub_header .row .shop_address {
+        float: right;
+        padding-top: 15px; }
+      .top_head .sub_header .row .searched_sort {
+        float: right;
+        padding-top: 7px; }
+        .top_head .sub_header .row .searched_sort select {
+          line-height: 26px;
+          -webkit-appearance: none;
+          /* 네이티브 외형 감추기 */
+          -moz-appearance: none;
+          appearance: none;
+          border: 2px solid #aaa;
+          border-radius: 5px;
+          text-align-last: center;
+          background: #fff url("../../images/1down_selectbox.png") no-repeat 95% 50%; }
+
+.shop_main {
+  width: 100%;
+  height: 400px;
+  background-image: url(../../images/1bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  position: relative; }
+
+/* content style */
+.content {
+  width: 100%;
+  background-color: #fff; }
+  .content .row {
+    width: 100%;
+    position: relative;
+    min-width: 320px;
+    max-width: 1024px;
+    margin: 0 auto;
+    color: #333;
+    box-sizing: border-box; }
+    .content .row .sub_title {
+      padding: 0px;
+      text-align: center; }
+  .content .location .map {
+    /* background-image: url(../../images/map.png); */
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover; }
+  .content .timetable .table {
+    width: 100%;
+    border-radius: 5px; }
+    .content .timetable .table table {
+      width: 100%; }
+      .content .timetable .table table tr:first-child td:first-child {
+        border-radius: 5px 0 0 0; }
+      .content .timetable .table table tr:first-child td:last-child {
+        border-radius: 0 5px 0 0; }
+      .content .timetable .table table tr td {
+        width: 50%;
+        text-align: center;
+        background-color: #f0f0f0;
+        box-sizing: border-box; }
+      .content .timetable .table table tr:last-child td:first-child {
+        border-radius: 0 0 0 5px; }
+      .content .timetable .table table tr:last-child td:last-child {
+        border-radius: 0 0 5px 0; }
+  .content .review .reviews .review_cont {
+    border-top: 2px solid #f0f0f0; }
+
+.bg_grey {
+  background-color: #f0f0f0; }
+
+/* footer style */
+footer .foot_cont {
+  min-width: 320px;
+  max-width: 1024px;
+  margin: 0 auto; }
+  footer .foot_cont a {
+    color: #000000; }
+
+@media screen and (max-width: 767px) {
+  h1 {
+    font-size: 15px; }
+
+  body {
+    font-size: 11px; }
+
+  /* Navigator */
+  .top_head header {
+    position: relative;
+    padding: 0 10px;
+    height: 100px;
+    position: relative; }
+    .top_head header .row {
+      width: 100%;
+      position: relative; }
+      .top_head header .row > div {
+        margin: 0 auto;
+        position: absolute;
+        display: table; }
+      .top_head header .row .left_header {
+        width: 100px;
+        height: 73px;
+        position: absolute;
+        left: 0px;
+        top: 15px;
+        font-size: 14px;
+        margin: 0px;
+        z-index: 1200; }
+        .top_head header .row .left_header .logo {
+          top: 15px;
+          cursor: pointer; }
+        .top_head header .row .left_header .select {
+          position: absolute;
+          bottom: 7px; }
+          .top_head header .row .left_header .select label:first-child {
+            padding-right: 10px; }
+          .top_head header .row .left_header .select label {
+            color: #fff; }
+      .top_head header .row .search_header {
+        box-sizing: border-box;
+        border-left: 108px solid rgba(255, 255, 255, 0);
+        border-right: 55px solid rgba(255, 255, 255, 0);
+        width: 100%;
+        position: absolute;
+        top: 44px; }
+        .top_head header .row .search_header .search_box {
+          width: 100%;
+          padding-top: 9px;
+          bottom: 11px;
+          left: 119px;
+          min-width: 130px;
+          max-width: 600px; }
+          .top_head header .row .search_header .search_box input,
+          .top_head header .row .search_header .search_box button {
+            height: 35px; }
+          .top_head header .row .search_header .search_box input {
+            width: 100%; }
+          .top_head header .row .search_header .search_box button {
+            width: 35px;
+            right: -35px; }
+      .top_head header .row .right_header {
+        width: 31px;
+        height: 74px;
+        position: absolute;
+        right: 0px;
+        top: 15px;
+        margin: 0px;
+        z-index: 1200;
+        		            /* .menu{
+        		                .top_menu{display: none;}
+        
+        			        } */ }
+        .top_head header .row .right_header .near_me {
+          display: table;
+          position: absolute;
+          bottom: 0;
+          right: 0; }
+          .top_head header .row .right_header .near_me .near_me_btn {
+            height: 35px;
+            width: 31px;
+            text-align: center; }
+            .top_head header .row .right_header .near_me .near_me_btn img {
+              width: 17px;
+              height: 22px;
+              margin: 0px auto; }
+        .top_head header .row .right_header .menu {
+          width: 208px;
+          height: 100vh;
+          padding-top: 30px;
+          position: fixed;
+          top: 150px;
+          right: -224px;
+          background-color: rgba(255, 255, 255, 0.9);
+          border-left: 2px solid #ddd; }
+          .top_head header .row .right_header .menu .top_menu.btn {
+            width: 100%;
+            height: 26px;
+            padding: 11px 8px;
+            float: right; }
+            .top_head header .row .right_header .menu .top_menu.btn span {
+              color: #000000;
+              float: right;
+              font-size: 15px; }
+            .top_head header .row .right_header .menu .top_menu.btn span:hover {
+              color: #0044ab; }
+            .top_head header .row .right_header .menu .top_menu.btn .active_topmenu {
+              color: #0044ab; }
+        .top_head header .row .right_header .home_dropped_menu {
+          position: absolute;
+          display: table;
+          top: 0px;
+          right: 0px; }
+  .top_head .sub_header {
+    height: 50px; }
+    .top_head .sub_header div {
+      margin: 0 auto; }
+    .top_head .sub_header .searched_txt span {
+      font-size: 18px; }
+    .top_head .sub_header .shop_address span {
+      font-size: 15px; }
+    .top_head .sub_header .searched_sort select {
+      width: 110px;
+      height: 25px;
+      font-size: 12px;
+      margin-left: 10px; }
+
+  /* shop main style */
+  .shop_main {
+    height: 260px;
+    margin-top: 150px; }
+
+  /* content style */
+  .content .row {
+    padding: 0 10px; }
+    .content .row .sub_title {
+      margin: 0;
+      padding: 15px 0; }
+  .content .location {
+    padding: 15px 10px; }
+    .content .location div {
+      border-radius: 5px 5px 0 0; }
+    .content .location .map {
+      height: 100px;
+      margin: 0px;
+      border-radius: 5px 5px 0 0; }
+    .content .location .shop {
+      height: 50px; }
+      .content .location .shop > div {
+        background-color: #fff;
+        box-sizing: border-box;
+        margin: 0 auto;
+        float: left;
+        height: 52px; }
+        .content .location .shop > div img {
+          width: 24px;
+          height: 24px;
+          margin: 0 auto;
+          padding-top: 5px; }
+        .content .location .shop > div p {
+          margin: 0;
+          padding-bottom: 5px;
+          font-size: 10px; }
+      .content .location .shop .booking {
+        width: 25%;
+        border-radius: 0 0 0 5px;
+        border-right: 1px solid #f0f0f0;
+        text-align: center; }
+      .content .location .shop .favorite {
+        width: 25%;
+        border-left: 1px solid #f0f0f0;
+        border-right: 1px solid #f0f0f0;
+        text-align: center;
+        border-radius: 0; }
+      .content .location .shop .shop_info {
+        width: 50%;
+        border-left: 1px solid #f0f0f0;
+        border-radius: 0 0 5px 0;
+        padding-left: 4px;
+        position: relative; }
+        .content .location .shop .shop_info p {
+          padding: 0;
+          margin: 0 auto;
+          float: left; }
+        .content .location .shop .shop_info .shop_name {
+          display: none;
+          font-size: 11px;
+          padding-top: 2px; }
+        .content .location .shop .shop_info .distance {
+          font-size: 11px;
+          padding: 2px 0 0 4px;
+          color: #777; }
+        .content .location .shop .shop_info .division_bottom {
+          width: 100%;
+          height: 1px; }
+        .content .location .shop .shop_info .shop_work {
+          position: absolute;
+          top: 15px; }
+          .content .location .shop .shop_info .shop_work .blue_label {
+            color: #0044ab; }
+          .content .location .shop .shop_info .shop_work .black_label {
+            color: #000000; }
+          .content .location .shop .shop_info .shop_work label {
+            height: 13px;
+            padding: 3px 4px 1px 3px;
+            border-radius: 5px;
+            background-color: #f0f0f0;
+            display: inline-block; }
+  .content .timetable .table table tr {
+    height: 25px; }
+  .content .review .sub_title {
+    width: 100%;
+    margin-top: 0; }
+    .content .review .sub_title label {
+      display: table;
+      margin: 0 auto; }
+      .content .review .sub_title label span {
+        display: table-cell;
+        vertical-align: middle;
+        padding-right: 8px;
+        font-size: 15px; }
+      .content .review .sub_title label img {
+        width: 15px;
+        height: 15px;
+        padding-left: 2px; }
+  .content .review .reviews {
+    width: 100%;
+    display: table; }
+    .content .review .reviews .review_cont {
+      width: 100%;
+      display: table; }
+      .content .review .reviews .review_cont .review_row {
+        display: table;
+        margin: 0 auto;
+        padding: 0px; }
+      .content .review .reviews .review_cont .user {
+        padding: 5px 0;
+        font-size: 11px; }
+        .content .review .reviews .review_cont .user .user_pic {
+          width: 40px;
+          height: 40px;
+          padding-right: 10px;
+          margin: 0 auto;
+          float: left; }
+          .content .review .reviews .review_cont .user .user_pic img {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%; }
+        .content .review .reviews .review_cont .user .user_date {
+          padding-top: 8px;
+          margin: 0 auto;
+          float: left; }
+          .content .review .reviews .review_cont .user .user_date .user_id {
+            color: #333; }
+          .content .review .reviews .review_cont .user .user_date .regi_date {
+            color: #777;
+            padding-top: 4px; }
+      .content .review .reviews .review_cont .star_score {
+        display: table;
+        margin: 0 auto; }
+        .content .review .reviews .review_cont .star_score .stars {
+          display: table; }
+          .content .review .reviews .review_cont .star_score .stars img {
+            width: 18px;
+            height: 18px;
+            padding-right: 2px; }
+      .content .review .reviews .review_cont .comment {
+        padding: 8px 0; }
+        .content .review .reviews .review_cont .comment p {
+          text-align: center;
+          padding: 0 10px;
+          margin: 0; }
+  .content .more_btn {
+    padding: 15px 0;
+    text-align: center; }
+    .content .more_btn button {
+      width: 155px;
+      height: 35px;
+      border: 0px;
+      border-radius: 5px;
+      background-color: #666666;
+      font-size: 15px;
+      color: #fff;
+      cursor: pointer; }
+
+  /* footer style */
+  footer {
+    height: 280px;
+    padding: 0 10px;
+    background-color: #bef0fb; }
+    footer h1 {
+      margin: 0px;
+      padding: 20px 10px; }
+    footer p {
+      padding: 0px 10px 2px 10px;
+      margin: 0px;
+      font-size: 11px; }
+    footer .sub_title {
+      font-size: 13px;
+      margin: 0px; }
+    footer .sitemap {
+      padding-top: 20px; } }
+@media screen and (max-width: 464px) {
+  /* content style */
+  .content .location .shop .shop_info .shop_work label {
+    margin-top: 0px; } }
+@media (min-width: 465px) and (max-width: 767px) {
+  /* content style */
+  .content .location .shop .shop_info .shop_name {
+    position: absolute;
+    top: 10px; }
+  .content .location .shop .shop_info .distance {
+    position: absolute;
+    top: 10px;
+    left: 5px; }
+  .content .location .shop .shop_info .shop_work {
+    position: absolute;
+    top: 24px; }
+    .content .location .shop .shop_info .shop_work label {
+      margin-top: 2px; } }
+@media (min-width: 768px) {
+  h1 {
+    font-size: 20px; }
+
+  body {
+    font-size: 14px; }
+
+  /* Navigator */
+  .top_head header {
+    padding: 0 20px;
+    height: 55px;
+    position: relative;
+    display: flex; }
+    .top_head header .row {
+      width: 100%;
+      position: relative; }
+      .top_head header .row > div {
+        display: table; }
+      .top_head header .row .left_header {
+        width: 300px;
+        position: absolute;
+        left: 0;
+        top: 0; }
+        .top_head header .row .left_header .logo {
+          padding: 17px 0 0 0;
+          margin: 0 auto;
+          float: left;
+          cursor: pointer; }
+          .top_head header .row .left_header .logo img {
+            height: 20px; }
+        .top_head header .row .left_header .select {
+          padding-top: 17px;
+          padding-right: 15px;
+          display: inline-table;
+          color: #fff;
+          font-size: 17px;
+          float: left; }
+          .top_head header .row .left_header .select .select_cat {
+            margin-left: 15px; }
+          .top_head header .row .left_header .select label {
+            padding-left: 2px; }
+      .top_head header .row .search_header {
+        box-sizing: border-box;
+        border-left: 300px solid rgba(255, 255, 255, 0);
+        border-right: 236px solid rgba(255, 255, 255, 0);
+        width: 100%; }
+        .top_head header .row .search_header .search_box {
+          width: 100%;
+          float: left;
+          padding-top: 9px;
+          position: relative; }
+          .top_head header .row .search_header .search_box input,
+          .top_head header .row .search_header .search_box button {
+            height: 35px; }
+          .top_head header .row .search_header .search_box input {
+            width: 100%; }
+          .top_head header .row .search_header .search_box button {
+            width: 35px;
+            right: -35px; }
+      .top_head header .row .right_header {
+        width: 226px;
+        position: absolute;
+        right: 0;
+        top: 0; }
+        .top_head header .row .right_header .near_me {
+          margin: 0px;
+          float: left;
+          padding-top: 7px;
+          padding-left: 15px; }
+          .top_head header .row .right_header .near_me .near_me_btn {
+            height: 35px;
+            width: 31px;
+            text-align: center; }
+            .top_head header .row .right_header .near_me .near_me_btn img {
+              width: 17px;
+              height: 22px;
+              margin: 0px auto; }
+        .top_head header .row .right_header .menu {
+          float: right;
+          padding-top: 7px; }
+          .top_head header .row .right_header .menu div {
+            margin: 0 auto; }
+          .top_head header .row .right_header .menu .top_menu {
+            display: table;
+            margin-left: 5px; }
+            .top_head header .row .right_header .menu .top_menu span:hover {
+              color: #51d4ff; }
+            .top_head header .row .right_header .menu .top_menu .active_topmenu {
+              color: #51d4ff !important; }
+          .top_head header .row .right_header .menu .top_menu:first-child {
+            width: 80px; }
+          .top_head header .row .right_header .menu .top_menu:last-child {
+            width: 90px; }
+        .top_head header .row .right_header .home_dropped_menu {
+          padding-top: 7px;
+          display: none; }
+  .top_head .sub_header {
+    height: 50px; }
+    .top_head .sub_header div {
+      margin: 0 auto; }
+    .top_head .sub_header .searched_txt span {
+      font-size: 18px; }
+    .top_head .sub_header .shop_address span {
+      font-size: 18px; }
+    .top_head .sub_header .searched_sort select {
+      width: 140px;
+      height: 35px;
+      font-size: 16px;
+      margin-left: 10px; }
+
+  /* shop main style */
+  .shop_main {
+    height: 400px;
+    margin-top: 105px; }
+
+  /* content style */
+  .content .row {
+    padding: 0px 20px; }
+    .content .row .sub_title {
+      margin: 0;
+      padding: 28px 0; }
+  .content .location {
+    height: 276px;
+    padding: 28px 20px; }
+    .content .location div {
+      margin: 0 auto;
+      float: left;
+      border-radius: 5px; }
+    .content .location .map {
+      width: 100%;
+      height: 220px;
+      min-width: 538px;
+      box-sizing: border-box;
+      width: 100%;
+      border-right: 190px solid #fff; }
+      .content .location .map img {
+        width: 100%;
+        border-radius: 5px 0 0 5px; }
+    .content .location .shop {
+      width: 190px;
+      right: 20px;
+      position: absolute;
+      top: 28px; }
+      .content .location .shop div {
+        background-color: #fff;
+        box-sizing: border-box; }
+        .content .location .shop div img {
+          width: 40px;
+          height: 40px;
+          margin: 0 auto;
+          padding-top: 15px; }
+        .content .location .shop div p {
+          margin: 0;
+          padding-top: 8px;
+          font-size: 18px; }
+      .content .location .shop .booking {
+        width: 50%;
+        height: 95px;
+        border-right: 1px solid #f0f0f0;
+        border-bottom: 1px solid #f0f0f0;
+        text-align: center; }
+      .content .location .shop .favorite {
+        width: 50%;
+        height: 95px;
+        border-radius: 0 5px 0 0;
+        border-left: 1px solid #f0f0f0;
+        border-bottom: 1px solid #f0f0f0;
+        text-align: center; }
+      .content .location .shop .shop_info {
+        width: 100%;
+        height: 123px;
+        padding: 15px 0 0 15px;
+        border-radius: 0 0 5px 0;
+        border-top: 1px solid #f0f0f0; }
+        .content .location .shop .shop_info p {
+          padding: 0;
+          margin: 0; }
+        .content .location .shop .shop_info .shop_name {
+          font-size: 22px; }
+        .content .location .shop .shop_info .distance {
+          font-size: 14px;
+          padding: 5px 0;
+          color: #777; }
+        .content .location .shop .shop_info .shop_work .blue_label {
+          color: #0044ab; }
+        .content .location .shop .shop_info .shop_work .black_label {
+          color: #000000; }
+        .content .location .shop .shop_info .shop_work label {
+          height: 17px;
+          padding: 3px 4px 1px 3px;
+          font-size: 14px;
+          margin-top: 2px;
+          border-radius: 4px;
+          display: inline-block;
+          background-color: #f2f1ef; }
+  .content .timetable .table table tr {
+    height: 35px; }
+  .content .review .sub_title {
+    width: 100%;
+    margin: 0;
+    padding: 28px 0; }
+    .content .review .sub_title label {
+      display: table;
+      margin: 0 auto; }
+      .content .review .sub_title label span {
+        display: table-cell;
+        vertical-align: middle;
+        padding-right: 8px;
+        font-size: 20px; }
+      .content .review .sub_title label img {
+        width: 20px;
+        height: 20px;
+        padding-left: 2px; }
+  .content .review .reviews {
+    width: 100%;
+    display: table; }
+    .content .review .reviews .review_cont {
+      width: 100%;
+      display: table; }
+      .content .review .reviews .review_cont .review_row {
+        display: table;
+        margin: 0 auto;
+        padding: 0px; }
+      .content .review .reviews .review_cont .user {
+        padding: 6px 0;
+        font-size: 12px; }
+        .content .review .reviews .review_cont .user .user_pic {
+          width: 55px;
+          height: 55px;
+          padding-right: 10px;
+          margin: 0 auto;
+          float: left; }
+          .content .review .reviews .review_cont .user .user_pic img {
+            width: 55px;
+            height: 55px;
+            border-radius: 50%; }
+        .content .review .reviews .review_cont .user .user_date {
+          padding-top: 10px;
+          margin: 0 auto;
+          float: left; }
+          .content .review .reviews .review_cont .user .user_date .user_id {
+            color: #333; }
+          .content .review .reviews .review_cont .user .user_date .regi_date {
+            color: #777;
+            padding-top: 5px; }
+      .content .review .reviews .review_cont .star_score {
+        display: table;
+        margin: 0 auto; }
+        .content .review .reviews .review_cont .star_score .stars {
+          display: table; }
+          .content .review .reviews .review_cont .star_score .stars img {
+            width: 18px;
+            height: 18px;
+            padding-right: 2px; }
+      .content .review .reviews .review_cont .comment {
+        padding: 10px 0; }
+        .content .review .reviews .review_cont .comment p {
+          text-align: center;
+          padding: 0 10px;
+          margin: 0; }
+  .content .more_btn {
+    padding: 28px 0;
+    text-align: center; }
+    .content .more_btn button {
+      width: 170px;
+      height: 40px;
+      font-size: 18px;
+      border: 0px;
+      border-radius: 5px;
+      background-color: #666666;
+      color: #fff;
+      cursor: pointer; }
+
+  /* footer style */
+  footer {
+    height: 280px;
+    background-color: #bef0fb; }
+    footer .foot_cont {
+      padding: 0 20px; }
+      footer .foot_cont div {
+        width: 49%;
+        margin: 0px auto;
+        float: left; }
+      footer .foot_cont h1 {
+        margin: 0px;
+        padding: 20px 10px; }
+      footer .foot_cont p {
+        padding: 0px 10px 2px 10px;
+        margin: 0px;
+        font-size: 13px; }
+      footer .foot_cont .sub_title {
+        font-size: 19px;
+        padding-bottom: 10px; }
+      footer .foot_cont .comp_info {
+        border-right: 1px solid #82a2cb; }
+      footer .foot_cont .sitemap p {
+        padding-left: 20px; } }

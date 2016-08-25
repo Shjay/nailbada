@@ -1,0 +1,893 @@
+/* -------------------------------------------------------------
+    Sass CSS3 Mixins! The Cross-Browser CSS3 Sass Library
+    By: Matthieu Aussaguel, http://www.mynameismatthieu.com, @matthieu_tweets
+
+    List of CSS3 Sass Mixins File to be @imported and @included as you need
+
+    The purpose of this library is to facilitate the use of CSS3 on different browsers avoiding HARD TO READ and NEVER
+    ENDING css files
+
+    note: All CSS3 Properties are being supported by Safari 5
+    more info: http://www.findmebyip.com/litmus/#css3-properties
+
+------------------------------------------------------------- */
+@import url(http://fonts.googleapis.com/earlyaccess/jejugothic.css);
+.animated {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both; }
+
+@-webkit-keyframes slideOutRight320 {
+  0% {
+    right: 0px; }
+  100% {
+    visibility: hidden;
+    right: -224px; } }
+@keyframes slideOutRight320 {
+  0% {
+    right: 0px; }
+  100% {
+    visibility: hidden;
+    right: -224px; } }
+.slideOutRight320 {
+  -webkit-animation-name: slideOutRight320;
+  animation-name: slideOutRight320; }
+
+@-webkit-keyframes slideInRight320 {
+  0% {
+    visibility: visible;
+    right: -224px; }
+  100% {
+    right: 0px; } }
+@keyframes slideInRight320 {
+  0% {
+    visibility: visible;
+    right: -224px; }
+  100% {
+    right: 0px; } }
+.slideInRight320 {
+  -webkit-animation-name: slideInRight320;
+  animation-name: slideInRight320; }
+
+@-webkit-keyframes slideOutRight768 {
+  0% {
+    right: 0px; }
+  100% {
+    visibility: hidden;
+    right: -234px; } }
+@keyframes slideOutRight768 {
+  0% {
+    right: 0px; }
+  100% {
+    visibility: hidden;
+    right: -234px; } }
+.slideOutRight768 {
+  -webkit-animation-name: slideOutRight768;
+  animation-name: slideOutRight768; }
+
+@-webkit-keyframes slideInRight768 {
+  0% {
+    visibility: visible;
+    right: -234px; }
+  100% {
+    right: 0px; } }
+@keyframes slideInRight768 {
+  0% {
+    visibility: visible;
+    right: -234px; }
+  100% {
+    right: 0px; } }
+.slideInRight768 {
+  -webkit-animation-name: slideInRight768;
+  animation-name: slideInRight768; }
+
+body {
+  margin: 0px;
+  padding: 0px;
+  width: 100%;
+  display: table;
+  font-family: 'Jeju Gothic', serif; }
+
+li {
+  list-style: none; }
+
+div {
+  display: block; }
+
+.btn-group-vertical > .btn-group:after, .btn-group-vertical > .btn-group:before,
+.btn-toolbar:after, .btn-toolbar:before,
+.clearfix:after, .clearfix:before,
+.container-fluid:after, .container-fluid:before,
+.container:after, .container:before,
+.dl-horizontal dd:after, .dl-horizontal dd:before,
+.form-horizontal .form-group:after, .form-horizontal .form-group:before,
+.modal-footer:after, .modal-footer:before,
+.modal-header:after, .modal-header:before,
+.nav:after, .nav:before,
+.navbar-collapse:after, .navbar-collapse:before,
+.navbar-header:after, .navbar-header:before,
+.navbar:after, .navbar:before,
+.pager:after, .pager:before,
+.panel-body:after, .panel-body:before,
+.row:after, .row:before {
+  display: table;
+  content: " "; }
+
+/* emphasised text */
+.emphasis {
+  color: #0044ab; }
+
+@media screen and (max-width: 384px) {
+  .container .row .nailshop .pic_desc {
+    padding-top: 6px; }
+  .container .row .nailshop .desc_top {
+    top: 40px; }
+  .container .row .nailshop .desc_bottom {
+    top: 51px;
+    padding-top: 5px; } }
+@media (min-width: 385px) and (max-width: 767px) {
+  .container .row .nailshop .pic_desc {
+    padding-top: 15px; }
+  .container .row .nailshop .nailshop_desc {
+    padding-left: 8px; }
+  .container .row .nailshop .desc_top {
+    padding-top: 2px;
+    top: 49px; }
+  .container .row .nailshop .desc_bottom {
+    top: 65px;
+    padding-top: 5px; } }
+@media screen and (max-width: 767px) {
+  h1 {
+    font-size: 15px; }
+
+  body {
+    font-size: 11px; }
+
+  .mypage {
+    position: fixed;
+    top: 100px;
+    right: -212px;
+    z-index: 1200;
+    font-size: 15px; }
+    .mypage .content {
+      width: 202px;
+      height: 100vh;
+      background-color: rgba(255, 255, 255, 0.9);
+      border-left: 2px solid #ddd;
+      position: relative;
+      padding-right: 8px; }
+      .mypage .content ul {
+        width: 100%;
+        padding: 0px;
+        margin: 0px; }
+        .mypage .content ul li {
+          cursor: pointer; }
+        .mypage .content ul .menu_head {
+          width: 100%;
+          height: 140px; }
+          .mypage .content ul .menu_head .user_info {
+            width: 100%;
+            color: #0044ab;
+            text-align: right;
+            padding-top: 11px; }
+          .mypage .content ul .menu_head .user_pic {
+            width: 100%;
+            padding-top: 25px;
+            text-align: right; }
+            .mypage .content ul .menu_head .user_pic img {
+              width: 40px;
+              height: 40px;
+              border: 1px solid #0044ab;
+              border-radius: 50%; }
+        .mypage .content ul .menu_li {
+          width: 100%;
+          height: 26px;
+          padding: 11px 0;
+          text-align: right;
+          cursor: pointer; }
+        .mypage .content ul .menu_li:hover {
+          color: #0044ab; }
+        .mypage .content ul .active_menu_li {
+          color: #0044ab; }
+
+  /* Navigator */
+  .top_head header {
+    position: relative;
+    padding: 0 10px;
+    height: 100px;
+    position: relative; }
+    .top_head header .row {
+      width: 100%;
+      position: relative; }
+      .top_head header .row > div {
+        margin: 0 auto;
+        position: absolute;
+        display: table; }
+      .top_head header .row .left_header {
+        width: 100px;
+        height: 73px;
+        position: absolute;
+        left: 0px;
+        top: 15px;
+        font-size: 14px;
+        margin: 0px;
+        z-index: 1200; }
+        .top_head header .row .left_header .logo {
+          top: 15px;
+          cursor: pointer; }
+        .top_head header .row .left_header .select {
+          position: absolute;
+          bottom: 7px; }
+          .top_head header .row .left_header .select label:first-child {
+            padding-right: 10px; }
+          .top_head header .row .left_header .select label {
+            color: #fff; }
+      .top_head header .row .search_header {
+        box-sizing: border-box;
+        border-left: 108px solid rgba(255, 255, 255, 0);
+        border-right: 55px solid rgba(255, 255, 255, 0);
+        width: 100%;
+        position: absolute;
+        top: 44px; }
+        .top_head header .row .search_header .search_box {
+          width: 100%;
+          padding-top: 9px;
+          bottom: 11px;
+          left: 119px;
+          min-width: 130px;
+          max-width: 600px; }
+          .top_head header .row .search_header .search_box input,
+          .top_head header .row .search_header .search_box button {
+            height: 35px; }
+          .top_head header .row .search_header .search_box input {
+            width: 100%; }
+          .top_head header .row .search_header .search_box button {
+            width: 35px;
+            right: -35px; }
+      .top_head header .row .right_header {
+        width: 31px;
+        height: 74px;
+        position: absolute;
+        right: 0px;
+        top: 15px;
+        margin: 0px;
+        z-index: 1200; }
+        .top_head header .row .right_header .near_me {
+          display: table;
+          position: absolute;
+          bottom: 0;
+          right: 0; }
+          .top_head header .row .right_header .near_me .near_me_btn {
+            height: 35px;
+            width: 31px;
+            text-align: center; }
+            .top_head header .row .right_header .near_me .near_me_btn img {
+              width: 17px;
+              height: 22px;
+              margin: 0px auto; }
+        .top_head header .row .right_header .menu .top_menu {
+          display: none; }
+        .top_head header .row .right_header .dropped_menu {
+          position: absolute;
+          display: table;
+          top: 0px;
+          right: 0px; }
+  .top_head .sub_header {
+    height: 50px; }
+    .top_head .sub_header div {
+      margin: 0 auto; }
+    .top_head .sub_header .favorite span {
+      font-size: 18px; }
+    .top_head .sub_header .searched_sort select {
+      line-height: 10px;
+      width: 110px;
+      height: 25px;
+      font-size: 12px;
+      margin-left: 10px;
+      padding: 0 16px 0 5px; }
+
+  /* content style */
+  .container {
+    padding: 150px 0px 0px 0px; }
+    .container .title {
+      padding: 0; }
+      .container .title .search_result h1 {
+        margin: 0;
+        padding: 15px; }
+    .container .top_row {
+      width: 100%;
+      height: 85px;
+      background-color: #f0f0f0;
+      z-index: 0; }
+      .container .top_row .head_detail {
+        width: 100%;
+        padding: 15px 0;
+        margin: 0;
+        z-index: 0;
+        position: relative; }
+        .container .top_row .head_detail h1 {
+          padding: 7px 0 0 0;
+          margin: 0;
+          text-align: center; }
+      .container .top_row .head_shop div {
+        width: 52px;
+        height: 42px;
+        margin: 0 auto; }
+        .container .top_row .head_shop div img {
+          width: 52px;
+          height: 42px; }
+      .container .top_row .head_academy div {
+        width: 61px;
+        height: 42px;
+        margin: 0 auto; }
+        .container .top_row .head_academy div img {
+          width: 61px;
+          height: 42px; }
+      .container .top_row .head_hidden {
+        display: none; }
+    .container .row .nailshops {
+      padding: 0 20px; }
+    .container .row .nailshop:first-child {
+      margin-top: 10px; }
+    .container .row .nailshop {
+      height: 100px;
+      margin-bottom: 10px;
+      background-color: #fff;
+      border-radius: 5px;
+      position: relative;
+      background-color: #f0f0f0; }
+      .container .row .nailshop .nailshop_pic {
+        width: 100px;
+        height: 100px;
+        margin: 0 auto;
+        float: left; }
+        .container .row .nailshop .nailshop_pic .active {
+          width: 100%;
+          height: 99px;
+          padding: 3px;
+          border-radius: 5px;
+          border: 2px solid #51d4ff;
+          position: absolute;
+          top: -5px;
+          left: -5px; }
+      .container .row .nailshop .pic_desc {
+        display: table;
+        padding-left: 8px; }
+        .container .row .nailshop .pic_desc p {
+          margin: 0px;
+          padding: 0px; }
+        .container .row .nailshop .pic_desc .shop_name {
+          font-size: 15px; }
+        .container .row .nailshop .pic_desc .shop_address {
+          font-size: 11px; }
+      .container .row .nailshop .nailshop_desc {
+        height: 20px;
+        font-size: 12px;
+        padding-left: 8px; }
+      .container .row .nailshop .desc_top {
+        display: inline-flex;
+        position: absolute; }
+        .container .row .nailshop .desc_top img {
+          width: 12px;
+          height: 12px;
+          padding-right: 1px; }
+        .container .row .nailshop .desc_top .desc_review {
+          display: table; }
+          .container .row .nailshop .desc_top .desc_review span {
+            color: #666666; }
+      .container .row .nailshop .desc_bottom {
+        position: absolute;
+        display: inline-block; }
+        .container .row .nailshop .desc_bottom label {
+          height: 13px;
+          padding: 3px 4px 1px 3px;
+          margin-top: 2px;
+          border-radius: 5px;
+          display: inline-block;
+          background-color: #fff; }
+        .container .row .nailshop .desc_bottom .blue_label {
+          color: #0044ab; }
+        .container .row .nailshop .desc_bottom .black_label {
+          color: #000000; }
+    .container .more {
+      padding-bottom: 15px; }
+      .container .more .more_shops {
+        text-align: center; }
+        .container .more .more_shops button {
+          width: 155px;
+          height: 35px;
+          font-size: 15px; }
+
+  /* footer style */
+  footer {
+    height: 280px;
+    padding: 0 10px;
+    background-color: #bef0fb; }
+    footer h1 {
+      margin: 0px;
+      padding: 20px 10px; }
+    footer p {
+      padding: 0px 10px 2px 10px;
+      margin: 0px;
+      font-size: 11px; }
+    footer a {
+      color: #000000; }
+    footer .sub_title {
+      font-size: 13px;
+      padding-bottom: 10px; }
+    footer .sitemap {
+      padding-top: 20px; } }
+@media (min-width: 768px) {
+  h1 {
+    font-size: 20px; }
+
+  body {
+    font-size: 14px; }
+
+  .mypage {
+    position: fixed;
+    top: 57px;
+    right: -234px;
+    z-index: 1200;
+    font-size: 15px; }
+    .mypage .content {
+      width: 230px;
+      height: 220px;
+      background-color: rgba(255, 255, 255, 0.9);
+      border: 2px solid #ddd;
+      position: relative; }
+      .mypage .content .triangle {
+        position: absolute;
+        top: -30px;
+        left: 148px;
+        width: 0;
+        height: 0;
+        display: inline-block;
+        border-style: solid;
+        border-width: 15px;
+        border-color: transparent transparent #51d4ff transparent; }
+      .mypage .content ul {
+        width: 100%;
+        padding: 0px;
+        margin: 0px; }
+        .mypage .content ul li {
+          cursor: pointer; }
+        .mypage .content ul .menu_head {
+          width: 100%;
+          height: 72px;
+          background-color: #51d4ff; }
+          .mypage .content ul .menu_head .user_info {
+            width: 78%;
+            float: left;
+            color: #0044ab;
+            text-align: right;
+            padding-top: 22px; }
+            .mypage .content ul .menu_head .user_info label {
+              padding-right: 8px; }
+          .mypage .content ul .menu_head .user_pic {
+            float: right;
+            width: 22%;
+            padding-top: 15px; }
+            .mypage .content ul .menu_head .user_pic img {
+              width: 40px;
+              height: 40px;
+              border: 1px solid #0044ab;
+              border-radius: 50%; }
+        .mypage .content ul .menu_li {
+          width: 100%;
+          height: 26px;
+          padding-top: 11px;
+          text-align: center;
+          cursor: pointer; }
+        .mypage .content ul .menu_li:hover {
+          color: #0044ab; }
+        .mypage .content ul .active_menu_li {
+          color: #0044ab; }
+
+  /* Navigator */
+  .top_head header {
+    padding: 0 20px;
+    height: 55px;
+    position: relative;
+    display: flex; }
+    .top_head header .row {
+      width: 100%;
+      position: relative; }
+      .top_head header .row > div {
+        display: table; }
+      .top_head header .row .left_header {
+        width: 300px;
+        position: absolute;
+        left: 0;
+        top: 0; }
+        .top_head header .row .left_header .logo {
+          padding: 17px 0 0 0;
+          margin: 0 auto;
+          float: left;
+          cursor: pointer; }
+          .top_head header .row .left_header .logo img {
+            height: 20px; }
+        .top_head header .row .left_header .select {
+          padding-top: 17px;
+          padding-right: 15px;
+          display: inline-table;
+          color: #fff;
+          font-size: 17px;
+          float: left; }
+          .top_head header .row .left_header .select .select_cat {
+            margin-left: 15px; }
+          .top_head header .row .left_header .select label {
+            padding-left: 2px; }
+      .top_head header .row .search_header {
+        box-sizing: border-box;
+        border-left: 300px solid rgba(255, 255, 255, 0);
+        border-right: 170px solid rgba(255, 255, 255, 0);
+        width: 100%; }
+        .top_head header .row .search_header .search_box {
+          width: 100%;
+          float: left;
+          padding-top: 9px;
+          position: relative; }
+          .top_head header .row .search_header .search_box input,
+          .top_head header .row .search_header .search_box button {
+            height: 35px; }
+          .top_head header .row .search_header .search_box input {
+            width: 100%; }
+          .top_head header .row .search_header .search_box button {
+            width: 35px;
+            right: -35px; }
+      .top_head header .row .right_header {
+        width: 160px;
+        position: absolute;
+        right: 0;
+        top: 0; }
+        .top_head header .row .right_header .near_me {
+          margin: 0px;
+          float: left;
+          padding-top: 7px;
+          padding-left: 15px; }
+          .top_head header .row .right_header .near_me .near_me_btn {
+            height: 35px;
+            width: 31px;
+            text-align: center; }
+            .top_head header .row .right_header .near_me .near_me_btn img {
+              width: 17px;
+              height: 22px;
+              margin: 0px auto; }
+        .top_head header .row .right_header .menu {
+          float: right;
+          padding-top: 7px; }
+          .top_head header .row .right_header .menu div {
+            margin: 0 auto; }
+          .top_head header .row .right_header .menu .top_menu {
+            display: table;
+            margin-left: 5px; }
+          .top_head header .row .right_header .menu .top_menu {
+            width: 100px; }
+          .top_head header .row .right_header .menu .top_menu span:hover {
+            color: #51d4ff; }
+        .top_head header .row .right_header .dropped_menu {
+          padding-top: 7px;
+          display: none; }
+  .top_head .sub_header {
+    height: 50px; }
+    .top_head .sub_header div {
+      margin: 0 auto; }
+    .top_head .sub_header .favorite span {
+      font-size: 18px; }
+    .top_head .sub_header .searched_sort {
+      position: relative; }
+      .top_head .sub_header .searched_sort select {
+        font-size: 16px;
+        line-height: 26px;
+        width: 140px;
+        height: 35px;
+        margin-left: 10px;
+        padding: 0 16px 0 5px; }
+
+  /* content style */
+  .container {
+    padding: 105px 0 0px 0; }
+    .container .title .search_result h1 {
+      margin: 0;
+      padding: 28px; }
+    .container .top_row {
+      width: 100%;
+      height: 130px;
+      background-color: #f0f0f0; }
+      .container .top_row .head_detail {
+        width: 100%;
+        padding: 15px 0;
+        margin: 0;
+        z-index: 0;
+        position: relative; }
+        .container .top_row .head_detail h1 {
+          padding: 13px 0 0 0;
+          margin: 0;
+          text-align: center; }
+      .container .top_row .head_shop div {
+        width: 71px;
+        height: 57px;
+        margin: 0 auto;
+        padding-top: 5px; }
+        .container .top_row .head_shop div img {
+          width: 71px;
+          height: 57px; }
+      .container .top_row .head_academy div {
+        width: 90px;
+        height: 61px;
+        margin: 0 auto;
+        padding-top: 5px; }
+        .container .top_row .head_academy div img {
+          width: 90px;
+          height: 61px; }
+      .container .top_row .head_hidden {
+        display: none; }
+    .container .row {
+      padding-top: 30px; }
+      .container .row .nailshops {
+        padding: 0 20px; }
+        .container .row .nailshops .nailshop {
+          width: 32%;
+          height: 220px;
+          padding-right: 2%;
+          margin: 0 auto;
+          float: left;
+          position: relative;
+          display: table; }
+          .container .row .nailshops .nailshop .nailshop_pic {
+            width: 100%;
+            height: 220px;
+            border-radius: 5px;
+            position: relative; }
+            .container .row .nailshops .nailshop .nailshop_pic .active {
+              width: 100%;
+              height: 220px;
+              padding: 3px;
+              border-radius: 5px;
+              border: 2px solid #51d4ff;
+              position: absolute;
+              top: -5px;
+              left: -5px; }
+            .container .row .nailshops .nailshop .nailshop_pic .nailshop_desc_box {
+              width: 100%;
+              height: 60px;
+              position: absolute;
+              bottom: 0px;
+              border-radius: 0 0 5px 5px;
+              background-color: rgba(0, 0, 0, 0.45); }
+          .container .row .nailshops .nailshop .pic_desc {
+            width: 100%;
+            height: 60px;
+            position: absolute;
+            top: 160px; }
+            .container .row .nailshops .nailshop .pic_desc .shop_name {
+              font-size: 22px;
+              padding: 6px 0 0 0; }
+            .container .row .nailshops .nailshop .pic_desc .shop_address {
+              font-size: 16px;
+              padding: 8px 0; }
+              .container .row .nailshops .nailshop .pic_desc .shop_address .emphasis {
+                color: #51d4ff; }
+            .container .row .nailshops .nailshop .pic_desc p {
+              margin: 0px;
+              text-align: center;
+              color: #fff; }
+        .container .row .nailshops .nailshop:last-child {
+          padding-right: 0px; }
+        .container .row .nailshops .nailshop_desc {
+          height: 20px;
+          font-size: 14px; }
+          .container .row .nailshops .nailshop_desc img {
+            width: 18px;
+            height: 18px;
+            padding-right: 2px; }
+          .container .row .nailshops .nailshop_desc .desc_review {
+            padding-top: 2px;
+            display: table; }
+          .container .row .nailshops .nailshop_desc span {
+            color: #666666; }
+        .container .row .nailshops .desc_top {
+          display: inline-flex;
+          padding-top: 8px; }
+        .container .row .nailshops .desc_bottom {
+          padding-top: 5px;
+          display: inline-block; }
+          .container .row .nailshops .desc_bottom .blue_label {
+            color: #0044ab; }
+          .container .row .nailshops .desc_bottom .black_label {
+            color: #000000; }
+          .container .row .nailshops .desc_bottom label {
+            height: 17px;
+            padding: 3px 4px 1px 3px;
+            margin-top: 2px;
+            background-color: #fff;
+            border-radius: 4px;
+            display: inline-block;
+            background-color: #f0f0f0; }
+    .container .nopadding {
+      padding-top: 0px; }
+    .container .more {
+      padding-bottom: 28px; }
+      .container .more .more_shops {
+        text-align: center; }
+        .container .more .more_shops button {
+          width: 170px;
+          height: 40px;
+          font-size: 18px; }
+
+  /* footer style */
+  footer {
+    height: 280px;
+    background-color: #bef0fb; }
+    footer .foot_cont {
+      padding: 0 20px; }
+      footer .foot_cont div {
+        width: 49%;
+        margin: 0px auto;
+        float: left; }
+      footer .foot_cont h1 {
+        margin: 0px;
+        padding: 20px 10px; }
+      footer .foot_cont p {
+        padding: 0px 10px 2px 10px;
+        margin: 0px;
+        font-size: 13px; }
+      footer .foot_cont .sub_title {
+        font-size: 19px;
+        padding-bottom: 10px; }
+      footer .foot_cont .comp_info {
+        border-right: 1px solid #82a2cb; }
+      footer .foot_cont .sitemap p {
+        padding-left: 20px; } }
+/* Navigation Style */
+.top_head {
+  width: 100%;
+  min-width: 320px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000; }
+  .top_head header {
+    background-image: linear-gradient(160deg, #0092c8 0%, #0044ab 100%); }
+    .top_head header .row {
+      min-width: 300px;
+      max-width: 1024px;
+      margin: 0 auto; }
+      .top_head header .row .btn {
+        height: 40px;
+        font-size: 18px;
+        text-align: center;
+        border-radius: 5px; }
+      .top_head header .row .search_box {
+        margin: 0px auto;
+        float: left;
+        display: flex; }
+        .top_head header .row .search_box input,
+        .top_head header .row .search_box button {
+          padding: 0px;
+          margin: 0px;
+          border: 0px;
+          font-size: 18px; }
+        .top_head header .row .search_box input {
+          border-radius: 5px 0 0 5px; }
+        .top_head header .row .search_box button {
+          border: 0px;
+          border-radius: 0 5px 5px 0;
+          background-color: #51d4ff; }
+          .top_head header .row .search_box button img {
+            width: 20px;
+            height: 20px;
+            padding-top: 3px; }
+        .top_head header .row .search_box #search_btn:hover {
+          box-shadow: 0px 0px 3px 1px #15c5ff; }
+      .top_head header .row .near_me {
+        margin: 0px; }
+        .top_head header .row .near_me .near_me_btn {
+          border-radius: 5px;
+          display: table;
+          cursor: pointer; }
+          .top_head header .row .near_me .near_me_btn img {
+            display: table-cell;
+            vertical-align: middle;
+            padding: 0 7px; }
+          .top_head header .row .near_me .near_me_btn .txt_s {
+            margin-top: 2px;
+            font-size: 10px;
+            color: #fff; }
+      .top_head header .row .menu div {
+        float: left; }
+      .top_head header .row .menu .top_menu {
+        color: #fff;
+        cursor: pointer; }
+        .top_head header .row .menu .top_menu span {
+          display: table-cell;
+          vertical-align: middle;
+          color: #fff; }
+        .top_head header .row .menu .top_menu .active_topmenu {
+          color: #51d4ff; }
+      .top_head header .row .menu .top_menu:hover span {
+        color: #51d4ff; }
+      .top_head header .row .dropped_menu {
+        height: 20px;
+        padding: 0px;
+        float: right;
+        cursor: pointer; }
+      .top_head header .row .dropped_menu ul {
+        width: 24px;
+        height: 20px;
+        padding: 0px;
+        margin: 0px auto;
+        display: table-cell;
+        vertical-align: middle; }
+        .top_head header .row .dropped_menu ul li {
+          height: 4px;
+          border: 0px;
+          border-radius: 2px;
+          background-color: #51d4ff;
+          margin-bottom: 4px; }
+        .top_head header .row .dropped_menu ul li:last-child {
+          margin-bottom: 0px; }
+  .top_head .sub_header {
+    background-color: #fff; }
+    .top_head .sub_header .row {
+      padding: 0 20px;
+      max-width: 1024px; }
+      .top_head .sub_header .row .favorite {
+        width: 50%;
+        height: 50px;
+        padding-top: 15px;
+        margin: 0 auto;
+        float: left;
+        box-sizing: border-box; }
+        .top_head .sub_header .row .favorite .linked {
+          cursor: pointer;
+          color: #777;
+          text-decoration: underline; }
+      .top_head .sub_header .row .favorite_academy {
+        padding-left: 10px;
+        border-left: 3px solid #f0f0f0; }
+
+/* content style */
+.container {
+  width: 100%;
+  min-height: 100vh; }
+  .container .title {
+    width: 100%;
+    min-width: 320px;
+    max-width: 1024px;
+    margin: 0 auto;
+    text-align: center; }
+    .container .title .search_result {
+      margin: 0px auto; }
+  .container .row {
+    width: 100%;
+    min-width: 320px;
+    max-width: 1024px;
+    display: table;
+    margin: 0 auto; }
+    .container .row .nailshop .nailshop_pic {
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-size: cover; }
+    .container .row .nailshop .nailshop_pic.nail01 {
+      background-image: url(../../images/2shop1.png); }
+    .container .row .nailshop .nailshop_pic.nail02 {
+      background-image: url(../../images/2shop2.png); }
+    .container .row .nailshop .nailshop_pic.nail03 {
+      background-image: url(../../images/2shop3.png); }
+  .container .more .more_shops {
+    text-align: center; }
+    .container .more .more_shops button {
+      border: 0px;
+      border-radius: 5px;
+      background-color: #666666;
+      color: #fff;
+      cursor: pointer; }
+
+/* footer style */
+footer .foot_cont {
+  min-width: 320px;
+  max-width: 1024px;
+  margin: 0 auto; }

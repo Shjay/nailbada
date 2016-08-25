@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>NAIL BADA</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="width=device-width, user-scalable=no">
+	<link rel="stylesheet" type="text/css" href="style/css/search.css" />
+	<link rel="stylesheet" type="text/css" href="style/css/login.css" />
+	<link rel="stylesheet" type="text/css" href="style/css/signup.css" />
+	<link rel="stylesheet" type="text/css" href="style/css/memberinfo.css" />
+	<script src="js/jquery.min.js"></script>
+	<script src="js/search.js"></script>
+	<script src="js/header.js"></script>
+</head>
+<body>
+	<div id="login_popup">
+	</div>
+	<div id="signup_popup">
+	</div>
+	<div id="memberinfo_popup">
+	</div>
+	<!-- Top Menu -->
+	<div class="top_head">
+		<header>
+			<!-- top navigarion -->
+			<div class="row header">
+				<div class="left_header">					
+					<!-- logo image -->
+					<div class="logo">
+						<img src="images/logo.png"/>
+					</div>
+					<!-- ./logo image -->
+					<!-- radio button for shop or academy-->
+					<div class="select">
+						<input type="radio" name="shop" value="shop" class="select_cat" checked="true" />
+						<label>샵</label>
+						<input type="radio" name="shop" value="shop" class="select_cat" />
+						<label>학원</label>
+					</div>
+					<!-- ./radio button for shop or academy-->
+				</div>
+				<div class="search_header">
+					<!-- search box -->
+					<div class="search_box">
+						<input type="text" class="search_txt" />
+						<button id="search_btn"><img src="images/1search.png"></button>
+					</div>
+					<!-- ./search box -->
+				</div>
+				<div class="right_header">
+					<!--near me-->					
+					<div class="near_me">
+						<div class="near_me_btn">
+							<img class="img_l" src="images/1nearme.png"/>
+							<span class="txt_s">내근처</span>
+						</div>
+					</div>
+					<!-- ./near me -->
+					<!-- login/sign up buttons on right-->
+					<div id="home_menu" class="menu">
+						<div class="top_menu btn" id="topLogin_btn">
+							<span>로그인</span>
+						</div>
+						<div class="top_menu btn" id="topSignUp_btn">
+							<span>회원가입</span>
+						</div>
+					</div>
+					<div id="home_dropped_menu" class="home_dropped_menu" data-value="ns">
+						<ul>
+							<li></li>
+							<li></li>
+							<li></li>
+						</ul>
+					</div>
+					<!-- ./login/sign up buttons on right-->
+				</div>
+			</div>
+		</header>
+		<!-- sub header -->
+		<div class="sub_header">
+			<div class="row">
+				<div class="searched_txt">
+					<span>서울시 역삼동</span>
+				</div>
+				<div class="searched_sort">
+					<select class="searched_sort_select">
+						<option>평점순으로 보기</option>
+						<option>평점순으로 보기</option>
+						<option>평점순으로 보기</option>
+					</select>
+				</div>
+			</div>
+		</div>
+		<!-- ./sub header -->
+	</div>
+	<!-- ./Top Menu -->
+
+	<!-- content section -->
+	<section class="container">
+		<!-- show total result count -->
+		<div class="title">
+			<div class="search_result">
+				<h1><span class="emphasis">15</span>개의 네일샵이 검색되었습니다.</h1>
+			</div>
+
+		</div>
+		<!-- ./show total result count -->
+
+		<!-- search results with 3 shops in 1 row -->
+		<div class="nopadding row search_results">
+			<div class="nailshops">
+				<!-- each shop information -->
+				<div class="nailshop">
+					<!-- nailshop picture-->
+					<div class="nailshop_pic nail01">
+						<div class="active_nailshop"></div>
+						<div class="nailshop_desc_box"></div>
+					</div>
+					<!-- ./nailshop picture-->
+					<!-- nailshop information in picture box-->
+					<div class="pic_desc">
+						<p class="shop_name">네일샵이름</p>
+						<p class="shop_address">서울 마포구 노고산 <span class="emphasis">1km 이내</span></p>
+					</div>
+					<!-- ./nailshop information in picture box-->
+					<!-- nailshop review info and star points -->
+					<div class="nailshop_desc desc_top">
+						<img src="images/2star_yellow.png">
+						<img src="images/2star_yellow.png">
+						<img src="images/2star_yellow.png">
+						<img src="images/2star_yellow.png">
+						<img src="images/2star_gray.png">
+						<div class="desc_review">
+							<span class="review">리뷰 30</span>
+							<span class="review">기본 10000~</span>
+						</div>
+					</div>
+					<!-- ./nailshop review info and star points -->
+					<!-- nailshop work information -->
+					<div class="nailshop_desc desc_bottom">
+						<label class="blue_label">O'2nails 취급점</label>
+						<label class="black_label">속눈썹</label>
+						<label class="black_label">왁싱</label>
+						<label class="black_label">반영구화장</label>
+					</div>
+					<!-- ./nailshop work information -->
+				</div>
+				<!-- ./each shop information -->
+
+				<!-- each shop information -->
+				<div class="nailshop">
+					<!-- nailshop picture-->
+					<div class="nailshop_pic nail01">
+						<div class="active_nailshop"></div>
+						<div class="nailshop_desc_box"></div>
+					</div>
+					<!-- ./nailshop picture-->
+					<!-- nailshop information in picture box-->
+					<div class="pic_desc">
+						<p class="shop_name">네일샵이름</p>
+						<p class="shop_address">서울 마포구 노고산 <span class="emphasis">1km 이내</span></p>
+					</div>
+					<!-- ./nailshop information in picture box-->
+					<!-- nailshop review info and star points -->
+					<div class="nailshop_desc desc_top">
+						<img src="images/2star_yellow.png">
+						<img src="images/2star_yellow.png">
+						<img src="images/2star_yellow.png">
+						<img src="images/2star_yellow.png">
+						<img src="images/2star_gray.png">
+						<div class="desc_review">
+							<span class="review">리뷰 30</span>
+							<span class="review">기본 10000~</span>
+						</div>
+					</div>
+					<!-- ./nailshop review info and star points -->
+					<!-- nailshop work information -->
+					<div class="nailshop_desc desc_bottom">
+						<label class="blue_label">O'2nails 취급점</label>
+						<label class="black_label">속눈썹</label>
+						<label class="black_label">왁싱</label>
+						<label class="black_label">반영구화장</label>
+					</div>
+					<!-- ./nailshop work information -->
+				</div>
+				<!-- ./each shop information -->
+
+				<!-- each shop information -->
+				<div class="nailshop">
+					<!-- nailshop picture-->
+					<div class="nailshop_pic nail01">
+						<div class="active_nailshop"></div>
+						<div class="nailshop_desc_box"></div>
+					</div>
+					<!-- ./nailshop picture-->
+					<!-- nailshop information in picture box-->
+					<div class="pic_desc">
+						<p class="shop_name">네일샵이름</p>
+						<p class="shop_address">서울 마포구 노고산 <span class="emphasis">1km 이내</span></p>
+					</div>
+					<!-- ./nailshop information in picture box-->
+					<!-- nailshop review info and star points -->
+					<div class="nailshop_desc desc_top">
+						<img src="images/2star_yellow.png">
+						<img src="images/2star_yellow.png">
+						<img src="images/2star_yellow.png">
+						<img src="images/2star_yellow.png">
+						<img src="images/2star_gray.png">
+						<div class="desc_review">
+							<span class="review">리뷰 30</span>
+							<span class="review">기본 10000~</span>
+						</div>
+					</div>
+					<!-- ./nailshop review info and star points -->
+					<!-- nailshop work information -->
+					<div class="nailshop_desc desc_bottom">
+						<label class="blue_label">O'2nails 취급점</label>
+						<label class="black_label">속눈썹</label>
+						<label class="black_label">왁싱</label>
+						<label class="black_label">반영구화장</label>
+					</div>
+					<!-- ./nailshop work information -->
+				</div>
+				<!-- ./each shop information -->
+			</div>
+		</div>
+		<!-- ./search results with 3 shops in 1 row -->
+
+		<!-- search results with 3 shops in 1 row -->
+		<div class="row search_results">
+			<div class="nailshops">
+				<!-- each shop information -->
+				<div class="nailshop">
+					<!-- nailshop picture-->
+					<div class="nailshop_pic nail01">
+						<div class="active_nailshop"></div>
+						<div class="nailshop_desc_box"></div>
+					</div>
+					<!-- ./nailshop picture-->
+					<!-- nailshop information in picture box-->
+					<div class="pic_desc">
+						<p class="shop_name">네일샵이름</p>
+						<p class="shop_address">서울 마포구 노고산 <span class="emphasis">1km 이내</span></p>
+					</div>
+					<!-- ./nailshop information in picture box-->
+					<!-- nailshop review info and star points -->
+					<div class="nailshop_desc desc_top">
+						<img src="images/2star_yellow.png">
+						<img src="images/2star_yellow.png">
+						<img src="images/2star_yellow.png">
+						<img src="images/2star_yellow.png">
+						<img src="images/2star_gray.png">
+						<div class="desc_review">
+							<span class="review">리뷰 30</span>
+							<span class="review">기본 10000~</span>
+						</div>
+					</div>
+					<!-- ./nailshop review info and star points -->
+					<!-- nailshop work information -->
+					<div class="nailshop_desc desc_bottom">
+						<label class="blue_label">O'2nails 취급점</label>
+						<label class="black_label">속눈썹</label>
+						<label class="black_label">왁싱</label>
+						<label class="black_label">반영구화장</label>
+					</div>
+					<!-- ./nailshop work information -->
+				</div>
+				<!-- ./each shop information -->
+
+				<!-- each shop information -->
+				<div class="nailshop">
+					<!-- nailshop picture-->
+					<div class="nailshop_pic nail01">
+						<div class="active_nailshop"></div>
+						<div class="nailshop_desc_box"></div>
+					</div>
+					<!-- ./nailshop picture-->
+					<!-- nailshop information in picture box-->
+					<div class="pic_desc">
+						<p class="shop_name">네일샵이름</p>
+						<p class="shop_address">서울 마포구 노고산 <span class="emphasis">1km 이내</span></p>
+					</div>
+					<!-- ./nailshop information in picture box-->
+					<!-- nailshop review info and star points -->
+					<div class="nailshop_desc desc_top">
+						<img src="images/2star_yellow.png">
+						<img src="images/2star_yellow.png">
+						<img src="images/2star_yellow.png">
+						<img src="images/2star_yellow.png">
+						<img src="images/2star_gray.png">
+						<div class="desc_review">
+							<span class="review">리뷰 30</span>
+							<span class="review">기본 10000~</span>
+						</div>
+					</div>
+					<!-- ./nailshop review info and star points -->
+					<!-- nailshop work information -->
+					<div class="nailshop_desc desc_bottom">
+						<label class="blue_label">O'2nails 취급점</label>
+						<label class="black_label">속눈썹</label>
+						<label class="black_label">왁싱</label>
+						<label class="black_label">반영구화장</label>
+					</div>
+					<!-- ./nailshop work information -->
+				</div>
+				<!-- ./each shop information -->
+
+				<!-- each shop information -->
+				<div class="nailshop">
+					<!-- nailshop picture-->
+					<div class="nailshop_pic nail01">
+						<div class="active_nailshop"></div>
+						<div class="nailshop_desc_box"></div>
+					</div>
+					<!-- ./nailshop picture-->
+					<!-- nailshop information in picture box-->
+					<div class="pic_desc">
+						<p class="shop_name">네일샵이름</p>
+						<p class="shop_address">서울 마포구 노고산 <span class="emphasis">1km 이내</span></p>
+					</div>
+					<!-- ./nailshop information in picture box-->
+					<!-- nailshop review info and star points -->
+					<div class="nailshop_desc desc_top">
+						<img src="images/2star_yellow.png">
+						<img src="images/2star_yellow.png">
+						<img src="images/2star_yellow.png">
+						<img src="images/2star_yellow.png">
+						<img src="images/2star_gray.png">
+						<div class="desc_review">
+							<span class="review">리뷰 30</span>
+							<span class="review">기본 10000~</span>
+						</div>
+					</div>
+					<!-- ./nailshop review info and star points -->
+					<!-- nailshop work information -->
+					<div class="nailshop_desc desc_bottom">
+						<label class="blue_label">O'2nails 취급점</label>
+						<label class="black_label">속눈썹</label>
+						<label class="black_label">왁싱</label>
+						<label class="black_label">반영구화장</label>
+					</div>
+					<!-- ./nailshop work information -->
+				</div>
+				<!-- ./each shop information -->
+			</div>
+		</div>
+		<!-- ./search results with 3 shops in 1 row -->
+
+		<!-- search results with 3 shops in 1 row -->
+		<div class="row search_results">
+			<div class="nailshops">
+				<!-- each shop information -->
+				<div class="nailshop">
+					<!-- nailshop picture-->
+					<div class="nailshop_pic nail01">
+						<div class="active_nailshop"></div>
+						<div class="nailshop_desc_box"></div>
+					</div>
+					<!-- ./nailshop picture-->
+					<!-- nailshop information in picture box-->
+					<div class="pic_desc">
+						<p class="shop_name">네일샵이름</p>
+						<p class="shop_address">서울 마포구 노고산 <span class="emphasis">1km 이내</span></p>
+					</div>
+					<!-- ./nailshop information in picture box-->
+					<!-- nailshop review info and star points -->
+					<div class="nailshop_desc desc_top">
+						<img src="images/2star_yellow.png">
+						<img src="images/2star_yellow.png">
+						<img src="images/2star_yellow.png">
+						<img src="images/2star_yellow.png">
+						<img src="images/2star_gray.png">
+						<div class="desc_review">
+							<span class="review">리뷰 30</span>
+							<span class="review">기본 10000~</span>
+						</div>
+					</div>
+					<!-- ./nailshop review info and star points -->
+					<!-- nailshop work information -->
+					<div class="nailshop_desc desc_bottom">
+						<label class="blue_label">O'2nails 취급점</label>
+						<label class="black_label">속눈썹</label>
+						<label class="black_label">왁싱</label>
+						<label class="black_label">반영구화장</label>
+					</div>
+					<!-- ./nailshop work information -->
+				</div>
+				<!-- ./each shop information -->
+
+				<!-- each shop information -->
+				<div class="nailshop">
+					<!-- nailshop picture-->
+					<div class="nailshop_pic nail01">
+						<div class="active_nailshop"></div>
+						<div class="nailshop_desc_box"></div>
+					</div>
+					<!-- ./nailshop picture-->
+					<!-- nailshop information in picture box-->
+					<div class="pic_desc">
+						<p class="shop_name">네일샵이름</p>
+						<p class="shop_address">서울 마포구 노고산 <span class="emphasis">1km 이내</span></p>
+					</div>
+					<!-- ./nailshop information in picture box-->
+					<!-- nailshop review info and star points -->
+					<div class="nailshop_desc desc_top">
+						<img src="images/2star_yellow.png">
+						<img src="images/2star_yellow.png">
+						<img src="images/2star_yellow.png">
+						<img src="images/2star_yellow.png">
+						<img src="images/2star_gray.png">
+						<div class="desc_review">
+							<span class="review">리뷰 30</span>
+							<span class="review">기본 10000~</span>
+						</div>
+					</div>
+					<!-- ./nailshop review info and star points -->
+					<!-- nailshop work information -->
+					<div class="nailshop_desc desc_bottom">
+						<label class="blue_label">O'2nails 취급점</label>
+						<label class="black_label">속눈썹</label>
+						<label class="black_label">왁싱</label>
+						<label class="black_label">반영구화장</label>
+					</div>
+					<!-- ./nailshop work information -->
+				</div>
+				<!-- ./each shop information -->
+
+				<!-- each shop information -->
+				<div class="nailshop">
+					<!-- nailshop picture-->
+					<div class="nailshop_pic nail01">
+						<div class="active_nailshop"></div>
+						<div class="nailshop_desc_box"></div>
+					</div>
+					<!-- ./nailshop picture-->
+					<!-- nailshop information in picture box-->
+					<div class="pic_desc">
+						<p class="shop_name">네일샵이름</p>
+						<p class="shop_address">서울 마포구 노고산 <span class="emphasis">1km 이내</span></p>
+					</div>
+					<!-- ./nailshop information in picture box-->
+					<!-- nailshop review info and star points -->
+					<div class="nailshop_desc desc_top">
+						<img src="images/2star_yellow.png">
+						<img src="images/2star_yellow.png">
+						<img src="images/2star_yellow.png">
+						<img src="images/2star_yellow.png">
+						<img src="images/2star_gray.png">
+						<div class="desc_review">
+							<span class="review">리뷰 30</span>
+							<span class="review">기본 10000~</span>
+						</div>
+					</div>
+					<!-- ./nailshop review info and star points -->
+					<!-- nailshop work information -->
+					<div class="nailshop_desc desc_bottom">
+						<label class="blue_label">O'2nails 취급점</label>
+						<label class="black_label">속눈썹</label>
+						<label class="black_label">왁싱</label>
+						<label class="black_label">반영구화장</label>
+					</div>
+					<!-- ./nailshop work information -->
+				</div>
+				<!-- ./each shop information -->
+			</div>
+		</div>
+		<!-- ./search results with 3 shops in 1 row -->
+		<!-- more view button section -->
+		<div class="row more">
+			<!-- button -->
+			<div class="more_shops">
+				<button>더 많은 네일 샵 보기</button>
+			</div>
+			<!-- ./button -->
+		</div>
+		<!-- ./more view button section -->
+	</section>
+	<!-- ./content section -->
+
+	<footer>
+		<div class="foot_cont">
+			<h1>NAILBADA</h1>
+			<div class="comp_info">
+				<p>
+					법인명(상호) : <a target="_blank" href="http://www.o2nails.kr/default/">(주)로빈네일</a>
+				</p>
+				<p>대표자(성명) : 음성욱 </p>
+				<p>사업자 등록번호 안내 : [107-88-35360]</p>
+				<p>전화 : 1522-6764</p>
+				<p>주소 : 서울특별시 동작구 사당동 155-8 1층</p>
+				<p>개인정보관리책임자 : 음성욱(esw6764@naver.com)</p>
+			</div>
+			<div class="sitemap">
+				<p class="sub_title">사이트맵</p>
+				<p>네일바다 | 회원가입 | 개인정보</p>
+			</div>
+		</div>
+	</footer>
+</body>
+<script>
+	search.init();
+	header.init();
+</script>
+</html>

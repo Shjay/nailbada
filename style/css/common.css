@@ -1,0 +1,681 @@
+@charset "UTF-8";
+/* -------------------------------------------------------------
+    Sass CSS3 Mixins! The Cross-Browser CSS3 Sass Library
+    By: Matthieu Aussaguel, http://www.mynameismatthieu.com, @matthieu_tweets
+
+    List of CSS3 Sass Mixins File to be @imported and @included as you need
+
+    The purpose of this library is to facilitate the use of CSS3 on different browsers avoiding HARD TO READ and NEVER
+    ENDING css files
+
+    note: All CSS3 Properties are being supported by Safari 5
+    more info: http://www.findmebyip.com/litmus/#css3-properties
+
+------------------------------------------------------------- */
+@import url(http://fonts.googleapis.com/earlyaccess/jejugothic.css);
+body {
+  margin: 0px;
+  padding: 0px;
+  width: 100%;
+  display: table;
+  font-family: 'Jeju Gothic', serif; }
+
+li {
+  list-style: none; }
+
+div {
+  display: block; }
+
+.btn-group-vertical > .btn-group:after, .btn-group-vertical > .btn-group:before,
+.btn-toolbar:after, .btn-toolbar:before,
+.clearfix:after, .clearfix:before,
+.container-fluid:after, .container-fluid:before,
+.container:after, .container:before,
+.dl-horizontal dd:after, .dl-horizontal dd:before,
+.form-horizontal .form-group:after, .form-horizontal .form-group:before,
+.modal-footer:after, .modal-footer:before,
+.modal-header:after, .modal-header:before,
+.nav:after, .nav:before,
+.navbar-collapse:after, .navbar-collapse:before,
+.navbar-header:after, .navbar-header:before,
+.navbar:after, .navbar:before,
+.pager:after, .pager:before,
+.panel-body:after, .panel-body:before,
+.row:after, .row:before {
+  display: table;
+  content: " "; }
+
+@media screen and (max-width: 767px) {
+  header {
+    padding: 10px 10px; }
+    header .nav01 .top_menu {
+      display: none; }
+    header .dropped_menu {
+      display: table; }
+    header .nav02 .sub_row .img_btn:first-child img {
+      height: 30px; }
+    header .nav02 .sub_row .img_btn:last-child img {
+      height: 30px; }
+    header .nav02 .sub_row .img_btn p {
+      font-size: 12px; }
+    header .nav02 .sub_row .division {
+      height: 50px; }
+    header .nav03 {
+      padding-top: 7px; }
+      header .nav03 .sub_row select {
+        display: none; }
+      header .nav03 .sub_row .search_box {
+        width: 90%; }
+        header .nav03 .sub_row .search_box input,
+        header .nav03 .sub_row .search_box button {
+          height: 35px; }
+        header .nav03 .sub_row .search_box input {
+          width: 100%; }
+        header .nav03 .sub_row .search_box button {
+          width: 35px;
+          right: -35px; }
+      header .nav03 .sub_row .txt_box {
+        display: none; }
+      header .nav03 .sub_row .near_me {
+        width: 8%;
+        padding-left: 2%; }
+        header .nav03 .sub_row .near_me .near_me_btn {
+          height: 35px;
+          width: 31px;
+          text-align: center; }
+          header .nav03 .sub_row .near_me .near_me_btn img {
+            width: 17px;
+            height: 22px;
+            margin: 0px auto; }
+          header .nav03 .sub_row .near_me .near_me_btn .txt_l {
+            display: none; }
+          header .nav03 .sub_row .near_me .near_me_btn .txt_s {
+            display: block; }
+
+  .main .main_headline ul li {
+    float: left;
+    padding: 0px 10px; }
+    .main .main_headline ul li div {
+      width: 8px;
+      height: 8px;
+      border-radius: 4px; }
+  .main .main_headline .headline {
+    font-size: 30px;
+    padding: 7px 0 0 0; }
+  .main .main_headline .sub_headline {
+    font-size: 22px;
+    padding: 18px 0 0 0; }
+  .main .main_headline .main_bottom_txt {
+    bottom: 69px; }
+    .main .main_headline .main_bottom_txt .bottom_describe {
+      font-size: 13px; }
+  .main .main_headline .main_bottom_btn {
+    width: 100%;
+    position: absolute;
+    bottom: 25px;
+    left: 0px; }
+    .main .main_headline .main_bottom_btn .bottom_btn {
+      width: 25px;
+      height: 40px;
+      border: 2px solid #39adff;
+      border-radius: 5px;
+      margin: 0px auto;
+      position: relative; }
+      .main .main_headline .main_bottom_btn .bottom_btn img {
+        position: absolute;
+        top: 24px;
+        left: 4px; }
+
+  .recommend {
+    width: 100%;
+    display: table;
+    padding-bottom: 45px; }
+    .recommend .title {
+      text-align: center; }
+      .recommend .title h5 {
+        padding: 16px 0 16px 0;
+        margin: 0px;
+        font-size: 20px; }
+    .recommend .second {
+      padding-top: 30px; }
+    .recommend .recommend_nailshops {
+      width: 100%;
+      margin: 0px auto;
+      display: table;
+      min-width: 320px;
+      max-width: 1024px;
+      position: relative; }
+      .recommend .recommend_nailshops .arrow {
+        width: 32px;
+        margin: 0px auto;
+        position: absolute;
+        bottom: -35px; }
+        .recommend .recommend_nailshops .arrow img {
+          width: 26px;
+          height: 26px; }
+      .recommend .recommend_nailshops .left {
+        left: 42%; }
+      .recommend .recommend_nailshops .right {
+        right: 42%; }
+      .recommend .recommend_nailshops ul {
+        width: 100%;
+        margin: 0px;
+        padding: 0px 20px;
+        display: table-cell; }
+        .recommend .recommend_nailshops ul li {
+          border-radius: 5px;
+          width: 100%;
+          height: 100px;
+          background-color: #fff;
+          position: relative; }
+        .recommend .recommend_nailshops ul .division {
+          width: 100%;
+          height: 10px;
+          background-color: rgba(255, 255, 255, 0); }
+        .recommend .recommend_nailshops ul .nailshop .nailshop_pic {
+          width: 100px;
+          height: 100px;
+          margin: 0px auto;
+          float: left;
+          position: relative;
+          border-radius: 5px 0 0 5px; }
+        .recommend .recommend_nailshops ul .nailshop .pic_desc {
+          padding-top: 8px;
+          padding-left: 8px;
+          position: absolute;
+          left: 100px; }
+          .recommend .recommend_nailshops ul .nailshop .pic_desc p {
+            margin: 0px;
+            padding: 0px; }
+          .recommend .recommend_nailshops ul .nailshop .pic_desc .shop_name {
+            font-size: 22px;
+            padding-top: 8px; }
+          .recommend .recommend_nailshops ul .nailshop .pic_desc .shop_address {
+            font-size: 11px;
+            padding-top: 3px; }
+        .recommend .recommend_nailshops ul .nailshop .nailshop_pic.nail01 {
+          background-image: url(../../images/2shop1.png); }
+        .recommend .recommend_nailshops ul .nailshop .nailshop_pic.nail02 {
+          background-image: url(../../images/2shop2.png); }
+        .recommend .recommend_nailshops ul .nailshop .nailshop_pic.nail03 {
+          background-image: url(../../images/2shop3.png); }
+        .recommend .recommend_nailshops ul .nailshop .nailshop_desc {
+          height: 20px;
+          font-size: 11px;
+          padding-left: 8px; }
+          .recommend .recommend_nailshops ul .nailshop .nailshop_desc img {
+            width: 12px;
+            height: 12px;
+            padding-right: 1px; }
+          .recommend .recommend_nailshops ul .nailshop .nailshop_desc span {
+            color: #666666; }
+          .recommend .recommend_nailshops ul .nailshop .nailshop_desc .desc_review {
+            padding-top: 2px;
+            display: table; }
+        .recommend .recommend_nailshops ul .nailshop .desc_bottom {
+          position: absolute;
+          top: 70px;
+          padding-top: 5px;
+          display: inline-block; }
+          .recommend .recommend_nailshops ul .nailshop .desc_bottom label {
+            height: 17px;
+            padding: 0px;
+            margin-top: 2px;
+            display: inline-block; }
+          .recommend .recommend_nailshops ul .nailshop .desc_bottom .blue_label {
+            color: #0044ab; }
+          .recommend .recommend_nailshops ul .nailshop .desc_bottom .black_label {
+            color: 0; }
+        .recommend .recommend_nailshops ul .nailshop .desc_top {
+          display: inline-flex;
+          position: absolute;
+          padding-top: 2px;
+          top: 56px; }
+
+  footer {
+    height: 280px;
+    background-color: #bef0fb; }
+    footer h1 {
+      margin: 0px;
+      padding: 20px 10px; }
+    footer p {
+      padding: 0px 10px 2px 10px;
+      margin: 0px;
+      font-size: 11px; }
+    footer .sub_title {
+      font-size: 13px;
+      padding-bottom: 10px; }
+    footer .sitemap {
+      padding-top: 20px; } }
+@media (min-width: 768px) {
+  header {
+    padding: 10px 20px; }
+    header .nav01 .menu .top_menu {
+      display: table; }
+    header .nav01 .dropped_menu {
+      display: none; }
+    header .nav02 .sub_row .img_btn:first-child img {
+      height: 40px; }
+    header .nav02 .sub_row .img_btn:last-child img {
+      height: 41px; }
+    header .nav02 .sub_row .img_btn p {
+      font-size: 13px; }
+    header .nav02 .sub_row .division {
+      height: 63px; }
+    header .nav03 {
+      padding-top: 15px; }
+      header .nav03 .sub_row .search_box input,
+      header .nav03 .sub_row .search_box button {
+        height: 40px; }
+      header .nav03 .sub_row .search_box button {
+        width: 40px;
+        right: -40px; }
+      header .nav03 .sub_row .txt_box {
+        display: table; }
+      header .nav03 .sub_row .near_me .near_me_btn {
+        height: 40px;
+        width: 145px;
+        background-color: #51d4ff; }
+        header .nav03 .sub_row .near_me .near_me_btn img {
+          margin: 6px 10px 0px 10px;
+          width: 22px;
+          float: left; }
+        header .nav03 .sub_row .near_me .near_me_btn .txt_l {
+          display: table-cell;
+          vertical-align: middle; }
+        header .nav03 .sub_row .near_me .near_me_btn .txt_s {
+          display: none; }
+
+  .main .main_headline ul li {
+    float: left;
+    padding: 0px 15px; }
+    .main .main_headline ul li div {
+      width: 13px;
+      height: 13px;
+      border-radius: 6px; }
+  .main .main_headline .headline {
+    font-size: 50px;
+    padding: 12px 0px 0px 0px; }
+  .main .main_headline .sub_headline {
+    font-size: 40px;
+    padding: 30px 0px 0px 0px; }
+  .main .main_headline .main_bottom_txt {
+    bottom: 115px; }
+    .main .main_headline .main_bottom_txt .bottom_describe {
+      font-size: 18px; }
+  .main .main_headline .main_bottom_btn {
+    width: 100%;
+    position: absolute;
+    bottom: 50px;
+    left: 0px; }
+    .main .main_headline .main_bottom_btn .bottom_btn {
+      width: 30px;
+      height: 50px;
+      border: 2px solid #39adff;
+      border-radius: 5px;
+      margin: 0px auto;
+      position: relative; }
+      .main .main_headline .main_bottom_btn .bottom_btn img {
+        position: absolute;
+        top: 24px;
+        left: 6px; }
+
+  .recommend {
+    width: 100%;
+    display: table;
+    padding-bottom: 30px; }
+    .recommend .title {
+      text-align: center; }
+      .recommend .title h5 {
+        padding: 24px 0 17px 0;
+        margin: 0px;
+        font-size: 20px; }
+    .recommend .recommend_nailshops {
+      width: 100%;
+      margin: 0px auto;
+      display: table;
+      min-width: 320px;
+      max-width: 1024px; }
+      .recommend .recommend_nailshops .arrow {
+        width: 32px;
+        margin: 0px auto;
+        position: relative;
+        top: -160px; }
+        .recommend .recommend_nailshops .arrow img {
+          width: 32px;
+          height: 32px; }
+      .recommend .recommend_nailshops .left {
+        float: left;
+        padding-left: 20px;
+        padding-right: 10px; }
+      .recommend .recommend_nailshops .right {
+        float: right;
+        padding-left: 10px;
+        padding-right: 20px; }
+      .recommend .recommend_nailshops ul {
+        width: 100%;
+        margin: 0px;
+        padding: 7px 0px;
+        display: table-cell; }
+        .recommend .recommend_nailshops ul li {
+          float: left;
+          position: relative; }
+        .recommend .recommend_nailshops ul .arrow {
+          width: 32px;
+          margin: 0px auto;
+          display: table-cell;
+          vertical-align: middle; }
+          .recommend .recommend_nailshops ul .arrow img {
+            width: 32px;
+            height: 32px; }
+        .recommend .recommend_nailshops ul .left {
+          float: left; }
+        .recommend .recommend_nailshops ul .right {
+          float: right; }
+        .recommend .recommend_nailshops ul .division {
+          width: 2%;
+          height: 40px; }
+        .recommend .recommend_nailshops ul .nailshop {
+          width: 32%; }
+          .recommend .recommend_nailshops ul .nailshop .nailshop_pic {
+            width: 100%;
+            height: 220px;
+            margin-bottom: 5px;
+            border-radius: 5px;
+            position: relative; }
+          .recommend .recommend_nailshops ul .nailshop .pic_desc {
+            width: 100%;
+            height: 60px;
+            position: absolute;
+            top: 160px;
+            border-radius: 0 0 5px 5px;
+            background-color: rgba(0, 0, 0, 0.45); }
+            .recommend .recommend_nailshops ul .nailshop .pic_desc p {
+              color: #fff;
+              margin: 0px;
+              padding: 0px;
+              text-align: center; }
+            .recommend .recommend_nailshops ul .nailshop .pic_desc .shop_name {
+              font-size: 22px;
+              padding-top: 6px; }
+            .recommend .recommend_nailshops ul .nailshop .pic_desc .shop_address {
+              font-size: 16px;
+              padding-top: 8px; }
+          .recommend .recommend_nailshops ul .nailshop .nailshop_pic.nail01 {
+            background-image: url(../../images/2shop1.png); }
+          .recommend .recommend_nailshops ul .nailshop .nailshop_pic.nail02 {
+            background-image: url(../../images/2shop2.png); }
+          .recommend .recommend_nailshops ul .nailshop .nailshop_pic.nail03 {
+            background-image: url(../../images/2shop3.png); }
+          .recommend .recommend_nailshops ul .nailshop .nailshop_desc {
+            height: 20px;
+            font-size: 14px; }
+            .recommend .recommend_nailshops ul .nailshop .nailshop_desc img {
+              width: 18px;
+              height: 18px;
+              padding-right: 3px; }
+            .recommend .recommend_nailshops ul .nailshop .nailshop_desc span {
+              color: #666666; }
+            .recommend .recommend_nailshops ul .nailshop .nailshop_desc .desc_review {
+              padding-top: 2px;
+              display: table; }
+          .recommend .recommend_nailshops ul .nailshop .desc_bottom {
+            padding-top: 5px;
+            display: inline-block; }
+            .recommend .recommend_nailshops ul .nailshop .desc_bottom label {
+              height: 17px;
+              padding: 3px 3px 0 3px;
+              margin-top: 2px;
+              background-color: #fff;
+              border-radius: 4px;
+              display: inline-block; }
+            .recommend .recommend_nailshops ul .nailshop .desc_bottom .blue_label {
+              color: #0044ab; }
+            .recommend .recommend_nailshops ul .nailshop .desc_bottom .black_label {
+              color: 0; }
+          .recommend .recommend_nailshops ul .nailshop .desc_top {
+            display: inline-flex; }
+
+  footer {
+    height: 280px;
+    background-color: #bef0fb; }
+    footer .foot_cont div {
+      width: 49%;
+      margin: 0px auto;
+      float: left; }
+    footer .foot_cont h1 {
+      margin: 0px;
+      padding: 20px 10px; }
+    footer .foot_cont p {
+      padding: 0px 10px 2px 10px;
+      margin: 0px;
+      font-size: 13px; }
+    footer .foot_cont .sub_title {
+      font-size: 19px;
+      padding-bottom: 10px; }
+    footer .foot_cont .comp_info {
+      border-right: 1px solid #82a2cb; }
+    footer .foot_cont .sitemap p {
+      padding-left: 20px; } }
+@media (min-width: 768px) and (max-width: 845px) {
+  .recommend .recommend_nailshops ul .nailshop .nailshop_desc img {
+    padding-right: 5px; }
+  .recommend .recommend_nailshops ul .nailshop .nailshop_desc span {
+    display: table; }
+  .recommend .recommend_nailshops ul .nailshop .desc_bottom {
+    padding-top: 12px; }
+  .recommend .recommend_nailshops ul .nailshop .desc_top {
+    padding-top: 0px; } }
+/* Navigation Style */
+.top_head {
+  width: 100%;
+  min-width: 320px;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  z-index: 1000; }
+  .top_head header {
+    background-image: linear-gradient(160deg, rgba(0, 146, 200, 0.9) 0%, rgba(0, 68, 171, 0.9) 100%); }
+    .top_head header .row {
+      display: table;
+      margin: 0px auto;
+      width: 100%;
+      max-width: 1024px; }
+      .top_head header .row .btn,
+      .top_head header .row .select {
+        height: 40px;
+        font-size: 18px;
+        text-align: center;
+        border-radius: 5px; }
+      .top_head header .row select {
+        min-width: 120px;
+        margin-left: 10px;
+        line-height: 26px;
+        -webkit-appearance: none;
+        /* 네이티브 외형 감추기 */
+        -moz-appearance: none;
+        appearance: none;
+        border: none;
+        border: 0px;
+        text-align-last: center;
+        background: #fff url("../../images/1down_selectbox.png") no-repeat 95% 50%; }
+    .top_head header .nav01 .logo {
+      float: left;
+      height: 40px; }
+      .top_head header .nav01 .logo img {
+        padding-top: 10px; }
+    .top_head header .nav01 .menu {
+      float: right; }
+      .top_head header .nav01 .menu div {
+        float: left; }
+      .top_head header .nav01 .menu .top_menu {
+        width: 110px;
+        color: #fff;
+        cursor: pointer; }
+        .top_head header .nav01 .menu .top_menu span {
+          display: table-cell;
+          vertical-align: middle;
+          color: #fff; }
+      .top_head header .nav01 .menu .top_menu:hover {
+        box-shadow: 0 0 0 3px #51d4ff inset; }
+    .top_head header .nav01 .dropped_menu {
+      height: 35px;
+      padding: 0px;
+      float: right;
+      cursor: pointer; }
+    .top_head header .nav01 .dropped_menu ul {
+      width: 24px;
+      height: 20px;
+      padding: 0px;
+      margin: 0px auto;
+      display: table-cell;
+      vertical-align: middle; }
+      .top_head header .nav01 .dropped_menu ul li {
+        height: 4px;
+        border: 0px;
+        border-radius: 2px;
+        background-color: #51d4ff;
+        margin-bottom: 4px; }
+      .top_head header .nav01 .dropped_menu ul li:last-child {
+        margin-bottom: 0px; }
+    .top_head header .nav02 {
+      padding-bottom: 5px; }
+      .top_head header .nav02 .sub_row {
+        display: table;
+        margin: 0px auto; }
+        .top_head header .nav02 .sub_row .img_btn:first-child {
+          width: 47px; }
+        .top_head header .nav02 .sub_row .img_btn:first-child:hover img {
+          content: url("../../images/1nailshop_selected_mouseover.png"); }
+        .top_head header .nav02 .sub_row .img_btn:last-child {
+          width: 60px; }
+        .top_head header .nav02 .sub_row .img_btn:last-child:hover img {
+          content: url("../../images/1hakwon_selected_mouseover.png"); }
+        .top_head header .nav02 .sub_row .img_btn {
+          margin: 0px auto;
+          float: left;
+          text-align: center;
+          cursor: pointer; }
+          .top_head header .nav02 .sub_row .img_btn p {
+            color: #fff;
+            padding-top: 5px;
+            margin: 0px; }
+        .top_head header .nav02 .sub_row .img_btn:hover p {
+          color: #51d4ff; }
+        .top_head header .nav02 .sub_row .division {
+          float: left;
+          margin-right: 18px;
+          margin-left: 17px;
+          border-left: 2px solid #51d4ff; }
+    .top_head header .nav03 .sub_row {
+      display: table;
+      margin: 0px auto;
+      min-width: 320px;
+      width: 100%; }
+      .top_head header .nav03 .sub_row select {
+        margin: 0px auto;
+        float: left;
+        margin-right: 10px; }
+      .top_head header .nav03 .sub_row .search_box {
+        margin: 0px auto;
+        float: left;
+        position: relative;
+        display: flex; }
+        .top_head header .nav03 .sub_row .search_box input,
+        .top_head header .nav03 .sub_row .search_box button {
+          padding: 0px;
+          margin: 0px;
+          border: 0px;
+          font-size: 18px; }
+        .top_head header .nav03 .sub_row .search_box input {
+          /* min-width: 210px; */
+          /* max-width: 510px; */
+          border-radius: 5px 0 0 5px; }
+        .top_head header .nav03 .sub_row .search_box button {
+          border: 0px;
+          border-radius: 0 5px 5px 0;
+          background-color: #51d4ff; }
+          .top_head header .nav03 .sub_row .search_box button img {
+            width: 20px;
+            height: 20px;
+            padding: 3px 10px 0px 10px; }
+      .top_head header .nav03 .sub_row .txt_box {
+        height: 40px;
+        float: left; }
+        .top_head header .nav03 .sub_row .txt_box span {
+          color: #fff;
+          padding: 0px 15px;
+          display: table-cell;
+          vertical-align: middle; }
+      .top_head header .nav03 .sub_row .near_me {
+        margin: 0px;
+        float: left; }
+        .top_head header .nav03 .sub_row .near_me .near_me_btn {
+          border-radius: 5px;
+          display: table;
+          cursor: pointer; }
+          .top_head header .nav03 .sub_row .near_me .near_me_btn img {
+            display: table-cell;
+            vertical-align: middle; }
+          .top_head header .nav03 .sub_row .near_me .near_me_btn .txt_l {
+            margin-top: 12px;
+            font-size: 18px;
+            float: right;
+            color: #0044ab;
+            margin-right: 10px; }
+          .top_head header .nav03 .sub_row .near_me .near_me_btn .txt_s {
+            margin-top: 2px;
+            font-size: 10px;
+            color: #fff; }
+
+.container {
+  width: 100%; }
+  .container .main {
+    width: 100%;
+    height: 100vh;
+    background-image: url(../../images/1bg.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    display: table; }
+    .container .main .main_headline {
+      width: 100%;
+      display: table-cell;
+      vertical-align: middle;
+      position: relative;
+      text-align: center;
+      padding: 65px 20px 0 20px; }
+      .container .main .main_headline ul {
+        display: table;
+        margin: 0px auto;
+        padding: 0px; }
+        .container .main .main_headline ul li .pointer01 {
+          background-color: #4de7dd; }
+        .container .main .main_headline ul li .pointer02 {
+          background-color: #43c8d7; }
+        .container .main .main_headline ul li .pointer03 {
+          background-color: #29b5e8; }
+        .container .main .main_headline ul li .pointer04 {
+          background-color: #298ce9; }
+        .container .main .main_headline ul li div {
+          background-color: #fff; }
+      .container .main .main_headline .headline,
+      .container .main .main_headline .sub_headline {
+        margin: 0px;
+        color: #fff;
+        text-align: center; }
+      .container .main .main_headline .main_bottom_txt {
+        width: 100%;
+        position: absolute;
+        left: 0px; }
+        .container .main .main_headline .main_bottom_txt .bottom_describe {
+          color: #fff;
+          padding: 0 0 10px 0;
+          margin: 0px; }
+  .container .recommend {
+    background-color: #f0f0f0; }
+
+footer .foot_cont {
+  min-width: 320px;
+  max-width: 1024px;
+  margin: 0 auto; }

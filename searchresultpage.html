@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>NAIL BADA</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="width=device-width, user-scalable=no">
+	<link rel="stylesheet" type="text/css" href="style/css/searchresult.css" />
+	<link rel="stylesheet" type="text/css" href="style/css/login.css" />
+	<link rel="stylesheet" type="text/css" href="style/css/signup.css" />
+	<link rel="stylesheet" type="text/css" href="style/css/memberinfo.css" />
+	<script src="https://maps.googleapis.com/maps/api/js"></script>
+	<script src="js/jquery.min.js"></script>
+	<script src="js/searchresult.js"></script>
+	<script src="js/header.js"></script>
+</head>
+<body>
+	<div id="login_popup">
+	</div>
+	<div id="signup_popup">
+	</div>
+	<div id="memberinfo_popup">
+	</div>
+	<!-- Top Menu -->
+	<div class="top_head">
+		<header>
+			<!-- top navigarion -->
+			<div class="row header">
+				<div class="left_header">					
+					<!-- logo image -->
+					<div class="logo">
+						<img src="images/logo.png"/>
+					</div>
+					<!-- ./logo image -->
+					<!-- radio button for shop or academy-->
+					<div class="select">
+						<input type="radio" name="shop" value="shop" class="select_cat" checked="true" />
+						<label>샵</label>
+						<input type="radio" name="shop" value="shop" class="select_cat" />
+						<label>학원</label>
+					</div>
+					<!-- ./radio button for shop or academy-->
+				</div>
+				<div class="search_header">
+					<!-- search box -->
+					<div class="search_box">
+						<input type="text" class="search_txt" />
+						<button id="search_btn"><img src="images/1search.png"></button>
+					</div>
+					<!-- ./search box -->
+				</div>
+				<div class="right_header">
+					<!--near me-->					
+					<div class="near_me">
+						<div class="near_me_btn">
+							<img class="img_l" src="images/1nearme.png"/>
+							<span class="txt_s">내근처</span>
+						</div>
+					</div>
+					<!-- ./near me -->
+					<!-- login/sign up buttons on right-->
+					<div id="home_menu" class="menu">
+						<div class="top_menu btn" id="topLogin_btn">
+							<span>로그인</span>
+						</div>
+						<div class="top_menu btn" id="topSignUp_btn">
+							<span>회원가입</span>
+						</div>
+					</div>
+					<div id="home_dropped_menu" class="home_dropped_menu" data-value="ns">
+						<ul>
+							<li></li>
+							<li></li>
+							<li></li>
+						</ul>
+					</div>
+					<!-- ./login/sign up buttons on right-->
+				</div>
+			</div>
+		</header>
+		<!-- sub header -->
+		<div class="sub_header">
+			<div class="row">
+				<div class="searched_txt">
+					<span>네일샵이름</span>
+				</div>
+				<div class="shop_address">
+					<span>서울시 마포구 노고산동 115-2</span>
+				</div>
+			</div>
+		</div>
+		<!-- ./sub header -->
+	</div>
+	<!-- ./Top Menu -->
+	<!-- main section -->
+	<section class="shop_main">
+	</section>
+	<!-- ./main section -->
+	<!-- content location section -->
+	<section class="content bg_grey">
+	
+		<div class="row location">
+			<div class="map" id="map">
+			</div>
+			<div class="shop">
+				<div class="booking" data-value="ns">
+					<img src="images/reservation.png"/>
+					<p>예약하기</p>
+				</div>
+				<div class="favorite" data-value="ns">
+					<img src="images/star_grey.png">
+					<p>찜하기</p>
+				</div>
+				<div class="shop_info">
+					<p class="shop_name">네일샵네임</p>
+					<p class="distance">5km 이내</p>
+					<div class="shop_work">
+						<label class="blue_label">O'2nails 취급점</label>
+						<label class="black_label">왁싱</label>
+						<label class="black_label">속눈썹</label>
+						<label class="black_label">반영구화장</label>
+					</div>
+				</div>
+			</div>	
+		</div>
+	</section>
+	<!-- ./content location section -->
+	<!-- content timetable section -->
+	<section class="content">
+		<div class="row timetable">
+		 	<h1 class="sub_title">가격표및 시간</h1>
+		 	<div class="table">
+		 		<table>
+		 			<tbody>
+		 				<tr>
+		 					<td>운영시간</td>
+		 					<td>월-금 10:00~18:00</td>
+		 				</tr>
+		 				<tr>
+		 					<td>기본네일</td>
+		 					<td>10,000</td>
+		 				</tr>
+		 				<tr>
+		 					<td>젤네일</td>
+		 					<td>50,000</td>
+		 				</tr>
+		 				<tr>
+		 					<td>속눈썹</td>
+		 					<td>10,000</td>
+		 				</tr>
+		 			</tbody>
+		 		</table>
+		 	</div>
+		 </div>
+	</section>
+	<!-- ./content timetable section -->
+	<!-- content review section -->
+	<section class="content">
+		<div class="row review">
+			<div class="sub_title">
+				<label>
+					<span>리뷰 30개</span>
+					<img src="images/star_yellow.png"/>
+					<img src="images/star_yellow.png"/>
+					<img src="images/star_yellow.png"/>
+					<img src="images/star_yellow.png"/>
+					<img src="images/star_grey.png"/>
+				</label>
+			</div>
+			
+			<!-- 리뷰 리스트 -->
+			<div class="reviews">
+				<!--리뷰 1건씩-->
+				<div class="review_cont">
+					<div class="review_row user">
+						<div class="user_pic">
+							<img src="images/profile.png">
+						</div>
+						<div class="user_date">
+							<div class="user_id">user_id</div>
+							<div class="regi_date">2016.07.01</div>
+						</div>
+					</div>
+					<div class="review_row star_score">
+						<div class="stars">
+							<img src="images/star_yellow.png"/>
+							<img src="images/star_yellow.png"/>
+							<img src="images/star_yellow.png"/>
+							<img src="images/2star_half.png"/>
+							<img src="images/star_grey.png"/>
+						</div>
+					</div>
+					<div class="review_row comment">
+						<p>친절하고 꼼꼼하게 정리해주셔서 너무 좋았어요! 다음에도 여기서 하려구요. 원장님 너무너무 감사드려요! 네일샵1 강추예요 강추!</p>
+					</div>
+				</div>
+				<!-- ./ 리뷰 1건 -->
+
+				<!--리뷰 1건씩-->
+				<div class="review_cont">
+					<div class="review_row user">
+						<div class="user_pic">
+							<img src="images/profile.png">
+						</div>
+						<div class="user_date">
+							<div class="user_id">user_id</div>
+							<div class="regi_date">2016.07.01</div>
+						</div>
+					</div>
+					<div class="review_row star_score">
+						<div class="stars">
+							<img src="images/star_yellow.png"/>
+							<img src="images/star_yellow.png"/>
+							<img src="images/star_yellow.png"/>
+							<img src="images/2star_half.png"/>
+							<img src="images/star_grey.png"/>
+						</div>
+					</div>
+					<div class="review_row comment">
+						<p>친절하고 꼼꼼하게 정리해주셔서 너무 좋았어요! 다음에도 여기서 하려구요. 원장님 너무너무 감사드려요! 네일샵1 강추예요 강추!</p>
+					</div>
+				</div>
+				<!-- ./ 리뷰 1건 -->
+
+				<!--리뷰 1건씩-->
+				<div class="review_cont">
+					<div class="review_row user">
+						<div class="user_pic">
+							<img src="images/profile.png">
+						</div>
+						<div class="user_date">
+							<div class="user_id">user_id</div>
+							<div class="regi_date">2016.07.01</div>
+						</div>
+					</div>
+					<div class="review_row star_score">
+						<div class="stars">
+							<img src="images/star_yellow.png"/>
+							<img src="images/star_yellow.png"/>
+							<img src="images/star_yellow.png"/>
+							<img src="images/2star_half.png"/>
+							<img src="images/star_grey.png"/>
+						</div>
+					</div>
+					<div class="review_row comment">
+						<p>친절하고 꼼꼼하게 정리해주셔서 너무 좋았어요! 다음에도 여기서 하려구요. 원장님 너무너무 감사드려요! 네일샵1 강추예요 강추!</p>
+					</div>
+				</div>
+				<!-- ./ 리뷰 1건 -->
+
+				<!--리뷰 1건씩-->
+				<div class="review_cont">
+					<div class="review_row user">
+						<div class="user_pic">
+							<img src="images/profile.png">
+						</div>
+						<div class="user_date">
+							<div class="user_id">user_id</div>
+							<div class="regi_date">2016.07.01</div>
+						</div>
+					</div>
+					<div class="review_row star_score">
+						<div class="stars">
+							<img src="images/star_yellow.png"/>
+							<img src="images/star_yellow.png"/>
+							<img src="images/star_yellow.png"/>
+							<img src="images/2star_half.png"/>
+							<img src="images/star_grey.png"/>
+						</div>
+					</div>
+					<div class="review_row comment">
+						<p>친절하고 꼼꼼하게 정리해주셔서 너무 좋았어요! 다음에도 여기서 하려구요. 원장님 너무너무 감사드려요! 네일샵1 강추예요 강추!</p>
+					</div>
+				</div>
+				<!-- ./ 리뷰 1건 -->
+
+				<!--리뷰 1건씩-->
+				<div class="review_cont">
+					<div class="review_row user">
+						<div class="user_pic">
+							<img src="images/profile.png">
+						</div>
+						<div class="user_date">
+							<div class="user_id">user_id</div>
+							<div class="regi_date">2016.07.01</div>
+						</div>
+					</div>
+					<div class="review_row star_score">
+						<div class="stars">
+							<img src="images/star_yellow.png"/>
+							<img src="images/star_yellow.png"/>
+							<img src="images/star_yellow.png"/>
+							<img src="images/2star_half.png"/>
+							<img src="images/star_grey.png"/>
+						</div>
+					</div>
+					<div class="review_row comment">
+						<p>친절하고 꼼꼼하게 정리해주셔서 너무 좋았어요! 다음에도 여기서 하려구요. 원장님 너무너무 감사드려요! 네일샵1 강추예요 강추!</p>
+					</div>
+				</div>
+				<!-- ./ 리뷰 1건 -->
+
+				<!--리뷰 1건씩-->
+				<div class="review_cont">
+					<div class="review_row user">
+						<div class="user_pic">
+							<img src="images/profile.png">
+						</div>
+						<div class="user_date">
+							<div class="user_id">user_id</div>
+							<div class="regi_date">2016.07.01</div>
+						</div>
+					</div>
+					<div class="review_row star_score">
+						<div class="stars">
+							<img src="images/star_yellow.png"/>
+							<img src="images/star_yellow.png"/>
+							<img src="images/star_yellow.png"/>
+							<img src="images/2star_half.png"/>
+							<img src="images/star_grey.png"/>
+						</div>
+					</div>
+					<div class="review_row comment">
+						<p>친절하고 꼼꼼하게 정리해주셔서 너무 좋았어요! 다음에도 여기서 하려구요. 원장님 너무너무 감사드려요! 네일샵1 강추예요 강추!</p>
+					</div>
+				</div>
+				<!-- ./ 리뷰 1건 -->
+
+				<!--리뷰 1건씩-->
+				<div class="review_cont">
+					<div class="review_row user">
+						<div class="user_pic">
+							<img src="images/profile.png">
+						</div>
+						<div class="user_date">
+							<div class="user_id">user_id</div>
+							<div class="regi_date">2016.07.01</div>
+						</div>
+					</div>
+					<div class="review_row star_score">
+						<div class="stars">
+							<img src="images/star_yellow.png"/>
+							<img src="images/star_yellow.png"/>
+							<img src="images/star_yellow.png"/>
+							<img src="images/2star_half.png"/>
+							<img src="images/star_grey.png"/>
+						</div>
+					</div>
+					<div class="review_row comment">
+						<p>친절하고 꼼꼼하게 정리해주셔서 너무 좋았어요! 다음에도 여기서 하려구요. 원장님 너무너무 감사드려요! 네일샵1 강추예요 강추!</p>
+					</div>
+				</div>
+				<!-- ./ 리뷰 1건 -->
+
+				<!--리뷰 1건씩-->
+				<div class="review_cont">
+					<div class="review_row user">
+						<div class="user_pic">
+							<img src="images/profile.png">
+						</div>
+						<div class="user_date">
+							<div class="user_id">user_id</div>
+							<div class="regi_date">2016.07.01</div>
+						</div>
+					</div>
+					<div class="review_row star_score">
+						<div class="stars">
+							<img src="images/star_yellow.png"/>
+							<img src="images/star_yellow.png"/>
+							<img src="images/star_yellow.png"/>
+							<img src="images/2star_half.png"/>
+							<img src="images/star_grey.png"/>
+						</div>
+					</div>
+					<div class="review_row comment">
+						<p>친절하고 꼼꼼하게 정리해주셔서 너무 좋았어요! 다음에도 여기서 하려구요. 원장님 너무너무 감사드려요! 네일샵1 강추예요 강추!</p>
+					</div>
+				</div>
+				<!-- ./ 리뷰 1건 -->
+
+				<!--리뷰 1건씩-->
+				<div class="review_cont">
+					<div class="review_row user">
+						<div class="user_pic">
+							<img src="images/profile.png">
+						</div>
+						<div class="user_date">
+							<div class="user_id">user_id</div>
+							<div class="regi_date">2016.07.01</div>
+						</div>
+					</div>
+					<div class="review_row star_score">
+						<div class="stars">
+							<img src="images/star_yellow.png"/>
+							<img src="images/star_yellow.png"/>
+							<img src="images/star_yellow.png"/>
+							<img src="images/2star_half.png"/>
+							<img src="images/star_grey.png"/>
+						</div>
+					</div>
+					<div class="review_row comment">
+						<p>친절하고 꼼꼼하게 정리해주셔서 너무 좋았어요! 다음에도 여기서 하려구요. 원장님 너무너무 감사드려요! 네일샵1 강추예요 강추!</p>
+					</div>
+				</div>
+				<!-- ./ 리뷰 1건 -->
+
+				<!--리뷰 1건씩-->
+				<div class="review_cont">
+					<div class="review_row user">
+						<div class="user_pic">
+							<img src="images/profile.png">
+						</div>
+						<div class="user_date">
+							<div class="user_id">user_id</div>
+							<div class="regi_date">2016.07.01</div>
+						</div>
+					</div>
+					<div class="review_row star_score">
+						<div class="stars">
+							<img src="images/star_yellow.png"/>
+							<img src="images/star_yellow.png"/>
+							<img src="images/star_yellow.png"/>
+							<img src="images/2star_half.png"/>
+							<img src="images/star_grey.png"/>
+						</div>
+					</div>
+					<div class="review_row comment">
+						<p>친절하고 꼼꼼하게 정리해주셔서 너무 좋았어요! 다음에도 여기서 하려구요. 원장님 너무너무 감사드려요! 네일샵1 강추예요 강추!</p>
+					</div>
+				</div>
+				<!-- ./ 리뷰 1건 -->
+			</div>
+			<!-- ./ 리뷰 리스트 -->
+		</div>
+
+		<div class="more_btn">
+			<button>더 많은 리뷰보기</button>
+		</div>
+	</section>
+	<!-- ./content review section -->
+	<footer>
+		<div class="foot_cont">
+			<h1>NAILBADA</h1>
+			<div class="comp_info">
+				<p>
+					법인명(상호) : <a target="_blank" href="http://www.o2nails.kr/default/">(주)로빈네일</a>
+				</p>
+				<p>대표자(성명) : 음성욱 </p>
+				<p>사업자 등록번호 안내 : [107-88-35360]</p>
+				<p>전화 : 1522-6764</p>
+				<p>주소 : 서울특별시 동작구 사당동 155-8 1층</p>
+				<p>개인정보관리책임자 : 음성욱(esw6764@naver.com)</p>
+			</div>
+			<div class="sitemap">
+				<p class="sub_title">사이트맵</p>
+				<p>네일바다 | 회원가입 | 개인정보</p>
+			</div>
+		</div>
+	</footer>
+</body>
+<script>
+	search.init();
+	header.init();
+</script>
+</html>
